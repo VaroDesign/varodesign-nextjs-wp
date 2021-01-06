@@ -1,0 +1,19 @@
+.nav-bar {
+    height: 100%;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    z-index: 3;
+}
+
+.nav-menu {
+    a {
+        display: block;
+    }
+}

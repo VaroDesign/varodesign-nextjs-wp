@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "next": "10.0.3",
+    "nprogress": "^0.2.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.32.0"
   },
   "devDependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0"
   }
 }

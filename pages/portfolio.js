@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="home">
+    <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar />
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to our demo blog!</h1>
         <p>
@@ -30,7 +32,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-      </div>
     </div>
   )
 }
