@@ -5,21 +5,76 @@
     position: fixed;
     top: 0;
     z-index: 1;
-    overflow-x: hidden;
-    padding-top: 20px;
+    overflow: hidden;
 }
 .left {
-    left: 25px;
-    background-color: #fff;
+    width: 57.1%;
+    z-index: 5;
+    left: -6%;
+    transform: skew(-16deg);
+    -webkit-transform: skew(-16deg);
+	-moz-transform: skew(-16deg);
+    -o-transform: skew(-16deg);
+    
+    .centered {
+        position: absolute;
+        bottom: 80%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: right;
+        transform: skew(-16deg);
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg);
+        width: 50%;
+        z-index: 6;
+    }
+    .background-image {
+        background-image: url(https://www.w3schools.com/cssref/pineapple.jpg);
+        transition: all 2s;
+        filter: grayscale(100%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: skew(16deg);
+        -webkit-transform: skew(16deg);
+        -moz-transform: skew(16deg);
+        -o-transform: skew(16deg);
+        position: absolute;
+        width: 110%;
+        height: 120%;
+        left: 10%;
+        top:-6%;
+    }
+    .active {
+        filter: grayscale(0%);
+        color:pink;
+        transform: scale(1.1) skew(16deg);
+        -webkit-transform: scale(0.95) skew(16deg);
+        -moz-transform: scale(1.1) skew(16deg);
+        -o-transform: scale(1.1) skew(16deg);
+    }
 }
 .right {
-    right: -25px;
+    width: 58%;
+    right: -9%;
     background-color: rgb(119, 118, 118);
-}
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    -webkit-transform: skew(-16deg);
+	-moz-transform: skew(-16deg);
+    -o-transform: skew(-16deg);
+
+    .centered {
+        position: absolute;
+        top: 80%;
+        right: 42%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        -webkit-transform: skew(16deg);
+        -moz-transform: skew(16deg);
+        -o-transform: skew(16deg);
+        width: 50%;
+    }
+    .centered:hover{
+        color: pink;
+    }
 }
