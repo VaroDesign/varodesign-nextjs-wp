@@ -15,7 +15,6 @@ class MyDocument extends Document {
           <Navbar />
           <Main />
           <NextScript />
-          <script src="tagcanvas.min.js" type="text/javascript"></script>
         </body>
       </Html>
     )

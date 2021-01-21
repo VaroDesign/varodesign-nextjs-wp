@@ -1,0 +1,49 @@
+#transition{
+  position: fixed;
+  background: url(images/assets/selection.png) no-repeat;
+  width: 360px;
+  height: 120px;
+  bottom: 6px;
+  left: 12px;
+  color: #FFF;
+  z-index: 1000;
+}
+  #transition div#selections{
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      left: 12px;
+      background: #333;
+      padding: 12px;
+      height: 180px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+
+  }
+  #transition div#toggleImg{
+      margin-top: 96px;
+      background: url(images/assets/toggle.png) no-repeat;	
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+  }
+  #transition p{
+      font-size: 12px;
+  }
+  #transition select{
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 18px;
+      display: inline-block;
+      width: 180px;
+      height: 26px;
+      padding: 4px;
+      font-size: 13px;
+      color: #555555;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+  }	

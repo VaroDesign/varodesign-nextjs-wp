@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function Portfolio() {
   const [hovered, setHovered] = useState(false);
@@ -6,6 +7,7 @@ export default function Portfolio() {
 
   return (
     <div className="container">
+    <Link href='/photography'>
     <div className="split left">
       <div className={hovered ? 'background-image active' : 'background-image'} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
       <div className="centered">
@@ -14,6 +16,7 @@ export default function Portfolio() {
       </div>
       </div>
     </div>
+    </Link>
     <div className="split right">
       <div className="centered">
         <h2>WEB DEVELOPMENT</h2>
