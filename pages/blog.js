@@ -46,7 +46,7 @@ const Blog = ({ allPosts: { edges } }) => (
   
 export default Blog
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const allPosts = await getAllPosts();
     return {
       props: {
