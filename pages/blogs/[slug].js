@@ -55,7 +55,7 @@ export default function Post({ postData }) {
     )
 }
 
-export async function getStaticPaths() {
+export async function getServerSidePaths() {
     const allPosts = await getAllPostsWithSlug();
 
     return {
@@ -64,7 +64,7 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const data = await getPost(params.slug);
 
     return {
