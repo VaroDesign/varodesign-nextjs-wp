@@ -1,3 +1,5 @@
+@import 'colors';
+
 .nav-bar {
     height: 100%;
     width: 50px;
@@ -13,7 +15,39 @@
 }
 
 .nav-menu {
+    text-align: center;
+    color: $greyFont;
     a {
         display: block;
+        margin: 15px 0;
+    }
+
+}
+.footer {
+    color:$greyFont;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 200;
+    p {
+        margin-bottom: 1px;
     }
 }
+.App-logo {
+    pointer-events: none;
+    color: #bada55;
+    margin-bottom: 2px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

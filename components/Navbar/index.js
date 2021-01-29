@@ -14,9 +14,8 @@ class Navbar extends Component {
                 </div>
                 <Nav/>
                 <div className="footer">
-                    <Link href='/about'>
-                        <a>FOOTER</a>
-                    </Link>
+                    <p>made<br/>in</p>
+                    <img width="40" src={"/icons/react-logo.svg"} className="App-logo" alt="react-logo" />
                 </div>
             </div>
         )
