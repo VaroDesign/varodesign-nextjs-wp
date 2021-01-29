@@ -1,4 +1,9 @@
 import React, {Component} from "react";
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+import { Button } from '../../lib/photo';
 
 class Photos extends Component {
   constructor() {
@@ -13,7 +18,23 @@ class Photos extends Component {
         type: "fruits",
       },
       {
+        title: "Suzuki",
+        type: "cars",
+      },
+      {
         title: "Fish",
+        type: "animal",
+      },
+      {
+        title: "Toyota",
+        type: "cars",
+      },
+      {
+        title: "Pinapple",
+        type: "fruits",
+      },
+      {
+        title: "Dog",
         type: "animal",
       },
      ],
@@ -39,16 +60,25 @@ class Photos extends Component {
   }
 
   render() {
-    const renderAll = this.state.filterCategory.map(category => <div className={"photo-img"} key={category.title}>{category.title}</div>)
+    const renderAll = <TransitionGroup component={null}>{
+      this.state.filterCategory.map(category =>
+        <CSSTransition timeout={600} classNames="fade" key={category.title}>
+          <div className="column">
+            <div className={"photo-img"}>{category.title}</div>
+          </div>
+        </CSSTransition>
+      )}
+      </TransitionGroup>
+      const renderButtons = Button.map((button)=>
+        <button key={button.title} value={button.value} onClick={this.handleClick}>{button.title}</button>
+      )
+      
     return (
         <div>
-          <button value='all' onClick={this.handleClick}>All</button>
-          <button value='cars' onClick={this.handleClick}>Cars</button>
-          <button value='fruits' onClick={this.handleClick}>Fruits</button>
-          <button value='animal' onClick={this.handleClick}>Animal</button>
-
-          {renderAll}
-
+          <div className="buttons">
+            {renderButtons}
+          </div>
+            {renderAll}
         </div>
     );
   }

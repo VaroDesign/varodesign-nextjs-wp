@@ -3,7 +3,7 @@ import Photos from '../components/portfolio/photos'
 
 export default function Portfolio() {
   return (
-        <div className="container">
+        <div className="container row">
           <Photos/>
         </div>
   )
