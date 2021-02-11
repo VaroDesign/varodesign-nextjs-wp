@@ -6,14 +6,14 @@ import Navbar from '../components/Navbar';
 export default function Home() {
   return (
     <div className={styles.container}>
+     <Navbar/>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="/js/tagcanvas.min.js" type="text/javascript"></script>
-        <script src="/js/tagcanvas-run.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/static/tagcanvas.min.js"></script>
+        <script type="text/javascript" src="/static/tagcanvas-run.js"></script>
       </Head>
 
-      <Navbar />
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to our demo blog!</h1>
         <p>

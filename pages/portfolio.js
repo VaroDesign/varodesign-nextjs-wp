@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 export default function Portfolio() {
   const [hovered, setHovered] = useState(false);
@@ -7,6 +8,7 @@ export default function Portfolio() {
 
   return (
     <div className="container">
+      <Navbar/>
     <Link href='/photography'>
     <div className="split left">
       <div className={hovered ? 'background-image active' : 'background-image'} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>

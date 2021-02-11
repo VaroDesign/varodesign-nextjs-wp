@@ -1,4 +1,4 @@
-
+setTimeout(function() {
     try {
       TagCanvas.Start('myCanvas','tags',{
         textColour: '#000',
@@ -12,3 +12,4 @@
       document.getElementById('myCanvasContainer').style.display = 'none';
     }
     TagCanvas.SetSpeed('myCanvas', [0.03, -0.04]);
+  }, 50);

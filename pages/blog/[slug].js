@@ -8,6 +8,7 @@ import { getAllPostsWithSlug, getPost } from '../../lib/api';
 // styles
 import styles from '../../styles/Home.module.css';
 import blogStyles from '../../styles/Blog.module.css';
+import Navbar from '../../components/Navbar';
 
 export default function Post({ postData }) {
     const router = useRouter();
@@ -26,6 +27,7 @@ export default function Post({ postData }) {
 
     return (
         <div className={styles.container}>
+            <Navbar/>
             <Head>
                 <title>{postData.title}</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -59,7 +61,7 @@ export async function getServerSidePaths() {
     const allPosts = await getAllPostsWithSlug();
 
     return {
-        paths: allPosts.edges.map(({ node }) => `/blogs/${node.slug}`) || [],
+        paths: allPosts.edges.map(({ node }) => `/blog/${node.slug}`) || [],
         fallback: false
     };
 }
