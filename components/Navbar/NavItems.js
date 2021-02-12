@@ -17,14 +17,14 @@ export const NavItems = [
     {
         title: 'Portfolio',
         url: '/portfolio',
-        cName: 'nav-links',
+        cName: 'portfolio',
         icon: "/icons/portfolio.svg",
         iconActive:"/icons/portfolio-active.svg"
     },
     {
         title: 'Blog',
         url: '/blog',
-        cName: 'nav-links',
+        cName: 'blog',
         icon: "/icons/blog.svg",
         iconActive:"/icons/blog-active.svg"
     },
@@ -34,5 +34,5 @@ export const NavItems = [
         cName: 'nav-links',
         icon: "/icons/contact.svg",
         iconActive:"/icons/contact-active.svg"
-    }
+    },
 ]

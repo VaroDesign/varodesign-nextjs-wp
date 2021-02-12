@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
+import React, { useEffect } from "react";
 
 // data
 import { getAllPostsWithSlug, getPost } from '../../lib/api';
@@ -11,6 +12,11 @@ import blogStyles from '../../styles/Blog.module.css';
 import Navbar from '../../components/Navbar';
 
 export default function Post({ postData }) {
+    useEffect(function mount() {
+        if (window.location.href.indexOf('blog') > -1) {
+          document.getElementsByClassName('blog')[0].attributes[0].value="/icons/blog-active.svg";
+      }
+      });
     const router = useRouter();
 
     if (!router.isFallback && !postData?.slug){

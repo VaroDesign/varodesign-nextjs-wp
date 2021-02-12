@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 
 export default function Portfolio() {
   const [hovered, setHovered] = useState(false);
