@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import '../styles/styles.scss';
+import 'react-image-lightbox/style.css';
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress

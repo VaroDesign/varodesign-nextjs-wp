@@ -28,6 +28,5 @@
 
 .fade-exit-active {
         opacity: 0;
-        transform: translateY(60rem) rotateZ(90deg);
         transition: opacity 1200ms, transform 1200ms;
     }

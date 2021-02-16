@@ -1,0 +1,15 @@
+export const lightboxImages = [
+    "/img/5d9b5bff52887931e8497a36.png",
+    "/img/orange.jpg",
+    "/img/5d9b5bff52887931e8497a36.png",
+    "/img/fish.jpg",
+    "/img/toyota.jpg",
+    "/img/5d9b5bff52887931e8497a36.png",
+    "/img/south-china-tiger.adapt.1900.1.jpg",
+    "/img/subordinate-meerkat-pack.jpg",
+    "/img/orange.jpg",
+    "/img/subordinate-meerkat-pack.jpg",
+    "/img/south-china-tiger.adapt.1900.1.jpg",
+    "/img/bugatti-chiron-pur-sport-106-1582836604.jpg",
+    "/img/5d9b5bff52887931e8497a36.png",
+  ];
