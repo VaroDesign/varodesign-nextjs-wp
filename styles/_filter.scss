@@ -1,19 +1,22 @@
 .photo-img {
-    width: 96.5%;
-    height: 60%;
     border: 1px #000 solid;
-    margin: 10px;
     background-color: pink;
 }
-.column {
-    float: left;
-    width: 33.33%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
   }
   
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+  /* Create two equal columns that sits next to each other */
+  .column {
+      flex: 33%;
+      padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
   }
 .fade-enter-done {
     opacity: 1;
