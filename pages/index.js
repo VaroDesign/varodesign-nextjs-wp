@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
 
+
 export default function Home() {
   return (
     <div className="container">
@@ -10,27 +11,21 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <script type="text/javascript" src="/static/scramble.js"></script>
       </Head>
       <div className="home">
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to our demo blog!</h1>
-        <p>
-          You can find more articles on the{' '}
-          <Link href='/blog'>
-          <a>blog articles page</a>
-          </Link>
-        </p>
+      <div className="welcome-container">
+        <video autoPlay loop src="/video/logo-efect.mp4"/>
+      </div>
+      <div className="neck-image"></div>
+        <div className="name">
+          <h2>Jakub</h2>
+          <h2>Varinsky</h2>
+        </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer>
       </footer>
       </div>
     </div>

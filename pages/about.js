@@ -34,6 +34,7 @@ export default function Home() {
         <li><a href="/fish">JavaScript</a></li>
         <li><a href="/chips">NextJS</a></li>
         <li><a href="/salt">ReactJS</a></li>
+        <li><a href="/vinegar">NunJucks</a></li>
         <li><a href="/vinegar">SASS</a></li>
         <li><a href="/vinegar">HTML</a></li>
         <li><a href="/vinegar">Git</a></li>

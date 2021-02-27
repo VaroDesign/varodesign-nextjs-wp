@@ -2,6 +2,8 @@
 @import 'portfolio';
 @import 'filter';
 @import 'about';
+@import 'home';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
 .container {
     padding-left: 50px;
@@ -14,6 +16,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    position: relative;
 }
 .container-l, .container-r {
     min-height: 100vh;
@@ -26,5 +30,13 @@
     border: 2px solid #bada55;
 }
 
+.dud {
+    display: inline-block;
+    color: #757575;
+}
 
-
+.text{
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+}
