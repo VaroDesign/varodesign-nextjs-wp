@@ -1,0 +1,26 @@
+.container {
+  padding-left: 50px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container-l,
+.container-r {
+  display: inline-flex;
+  width: 48.71%;
+  height: 80vh;
+  border: 2px solid pink;
+  justify-content: center;
+}
+.container-r {
+  position: absolute;
+  right: 0;
+  border: 2px solid #bada55;
+}
+.container-l {
+  position: absolute;
+  left: 50px;
+}
+.content-middle {
+  margin: auto;
+}
