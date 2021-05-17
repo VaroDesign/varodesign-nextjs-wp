@@ -4,9 +4,11 @@ import Navbar from '../components/Navbar';
 
 export default function Contact() {
   return (
-    <div className="container">
-      <Navbar/>
-      <h2>Contact</h2>
+    <div className="contact">
+      <div className="container">
+        <Navbar/>
+        <h2>Contact</h2>
+      </div>
     </div>
   )
 }

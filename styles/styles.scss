@@ -5,3 +5,21 @@
 @import "home";
 @import "containers";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: $main;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #999999;
+    text-shadow: 4px 4px 10px rgb(0,0,0);
+}

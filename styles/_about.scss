@@ -1,14 +1,15 @@
-#tags {
-  display: none;
-}
 .about {
   text-align: center;
-  h2 {
-  }
-  .container-l {
-    width: 60%;
-  }
-  .container-r {
-    width: 35%;
-  }
+    #tags {
+      display: none;
+      color: white;
+    }
+    .container-l {
+      padding-top: 3rem;
+      width: 55%;
+    }
+    .container-r {
+      width: 35%;
+    }
+
 }

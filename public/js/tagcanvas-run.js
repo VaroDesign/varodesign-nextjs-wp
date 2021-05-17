@@ -1,10 +1,12 @@
 setTimeout(function() {
     try {
       TagCanvas.Start('myCanvas','tags',{
-        textColour: '#000',
+        textColour: '#fff',
+        outlineColour: 'rgba(0,0,0,0)',
         reverse: true,
         depth: 0.8,
-        maxSpeed: 0.05,
+        zoomMax: 1.05,
+        maxSpeed: 0.02,
         minSpeed: 0.01
       });
     } catch(e) {

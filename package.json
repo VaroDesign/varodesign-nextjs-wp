@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "yarn build && next export && node rss-gen.js"
+    "deploy": "yarn build && next export && node rss-gen.js",
+    "sass": "node-sass --output-style compressed -o public/css styles/styles.scss"
   },
   "dependencies": {
     "next": "10.0.3",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "axios": "^0.21.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "node-sass": "^6.0.0"
   }
 }
