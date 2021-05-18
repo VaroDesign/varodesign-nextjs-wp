@@ -2,7 +2,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/public/html/about.html',
+        source: '/html/about.html',
         destination: '/about',
       },
     ]
