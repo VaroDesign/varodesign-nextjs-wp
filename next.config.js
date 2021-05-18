@@ -3,8 +3,16 @@ module.exports = {
     return [
       {
         source: '/about',
-        destination: '/html/about.html',
+        destination: '/about.html',
         permanent: true,
+      },
+    ]
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/about.html',
+        destination: '/abouto',
       },
     ]
   },

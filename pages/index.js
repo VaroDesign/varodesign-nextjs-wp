@@ -11,7 +11,6 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <script type="text/javascript" src="/static/scramble.js"></script>
       </Head>
       <div className="home">
       <main className={styles.main}>
