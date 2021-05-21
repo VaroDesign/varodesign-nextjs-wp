@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
+import dynamic from 'next/dynamic';
+
+import Video from '../components/homepage/video';
 
 
 export default function Home() {
@@ -15,8 +18,8 @@ export default function Home() {
       <div className="home">
       <main className={styles.main}>
       <div className="welcome-container">
-        <video autoPlay loop src="/video/logo-efect.mp4"/>
-      </div>
+      <Video/>
+        </div>
       <div className="neck-image"></div>
         <div className="name">
           <h2>Jakub</h2>
