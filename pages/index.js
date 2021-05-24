@@ -18,8 +18,8 @@ export default function Home() {
       <div className="home">
       <main className={styles.main}>
       <div className="welcome-container">
-      <Video/>
-        </div>
+        <Video/>
+      </div>
       <div className="neck-image"></div>
         <div className="name">
           <h2>Jakub</h2>
