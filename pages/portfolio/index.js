@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 
@@ -8,6 +9,9 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio">
+      <Head>
+      <title>Jakub Varinsky | Portfolio</title>
+      </Head> 
       <div className="container">
         <Navbar/>
         <Link href='/photography'>

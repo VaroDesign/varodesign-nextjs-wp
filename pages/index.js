@@ -12,7 +12,7 @@ export default function Home() {
     <div className="container">
       <Navbar/>
       <Head>
-        <title>Create Next App</title>
+        <title>Jakub Varinsky | Web Developer & Photographer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="home">

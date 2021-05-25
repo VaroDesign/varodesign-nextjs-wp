@@ -1,11 +1,10 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 
 class video extends Component {
-
     render() {
         return (
             <div className="">
-                <video autoPlay={true} loop muted id="ref" src="/video/logo-efect.mp4"/>
+                <video autoPlay={true} loop muted src="/video/logo-efect.mp4"/>
           </div>
         );
     }
