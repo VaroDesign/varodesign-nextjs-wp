@@ -40,5 +40,19 @@
           margin: 1rem 1rem 0 1rem;
         }
     }
+    @media screen and (max-width: 768px) {
+      .row {
+        margin: 1.2rem;
+      }
+      .column {
+        width: 98% !important;
+      }
+      .column:first-child {
+        margin: 0.5rem;
+      }
+      canvas {
+        width: 96%;
+      }
+    }
 
 }

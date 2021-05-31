@@ -12,7 +12,7 @@ export default function Nav () {
                         return (
                             <div key={item.title} className="nav-item">
                                 <Link href={item.url}>
-                                    <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName}/>
+                                    <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName} alt={item.alt} />
                                 </Link>
                                 <span className="tooltip">{item.title}</span>
                             </div>
