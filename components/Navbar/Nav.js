@@ -1,9 +1,20 @@
 import Link from 'next/link';
 import { NavItems } from './NavItems';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from "next/router";
 
 export default function Nav () {
+    useEffect(function mount() {
+        if (window.location.href.indexOf('photography') > -1) {
+          document.getElementsByClassName('portfolio')[0].attributes[0].value="/icons/portfolio-active.svg";
+         }
+        if (window.location.href.indexOf('web-development') > -1) {
+            document.getElementsByClassName('portfolio')[0].attributes[0].value="/icons/portfolio-active.svg";
+        }
+        if (window.location.href.indexOf('blog') > -1) {
+          document.getElementsByClassName('blog')[0].attributes[0].value="/icons/blog-active.svg";
+        }
+      });
         const router = useRouter();
         return (
             <nav>

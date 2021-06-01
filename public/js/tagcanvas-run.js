@@ -3,7 +3,6 @@ setTimeout(function() {
       TagCanvas.Start('varoTags','tags',{
         textColour: '#fff',
         outlineColour: 'rgba(0,0,0,0)',
-        reverse: true,
         depth: 0.8,
         zoomMax: 1.1,
         maxSpeed: 0.02,

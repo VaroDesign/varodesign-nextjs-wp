@@ -5,7 +5,6 @@ const Images = ({ allImages: { edges } }) => (
     <div className="photography">
         <div className="container">
         <Navbar/>
-        
           {edges.map(({ node }) => (
             <div key={node.id}>
               <div>
@@ -14,7 +13,6 @@ const Images = ({ allImages: { edges } }) => (
                     height={150}
                     src={node.mediaItemUrl}
                     alt={node.altText}
-                    description={node.description}
                   />
                 </figure>
               </div>

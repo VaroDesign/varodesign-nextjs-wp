@@ -3,8 +3,9 @@ import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
-import { Button } from '../../lib/photo';
+import { Button, LeftPhotos } from '../../lib/photo';
 import Lightbox from 'react-image-lightbox';
+import { getPhotos } from '../../lib/api';
 import { lightboxImages } from './lightboxImages'
 
 class Photos extends Component {
@@ -13,38 +14,7 @@ class Photos extends Component {
     this.state = { 
       photoIndex: 0,
       isOpen: false,
-      left: [
-      {
-        title: "Mustang",
-        type: "cars",
-        url: "/img/5d9b5bff52887931e8497a36.png",
-        photoIndex: 0
-      },
-      {
-        title: "Orange",
-        type: "fruits",
-        url: "/img/orange.jpg",
-        photoIndex: 1
-      },
-      {
-        title: "Suzuki",
-        type: "cars",
-        url: "/img/5d9b5bff52887931e8497a36.png",
-        photoIndex: 2
-      },
-      {
-        title: "Fish",
-        type: "animal",
-        url: "/img/fish.jpg",
-        photoIndex: 3
-      },
-      {
-        title: "Toyota",
-        type: "cars",
-        url: "/img/toyota.jpg",
-        photoIndex: 4
-      },
-     ],
+      left: LeftPhotos,
       middle: [
         {
           title: "mid-asd",
