@@ -26,6 +26,14 @@
       );
     }
   }
+  &__logo-video {
+    @include for-tablet-landscape {
+      @apply mt-10 mb-8;
+    }
+    @include for-desktop-large {
+      @apply mt-24 mb-8;
+    }
+  }
   &__welcome-text {
     @apply text-left pl-20 flex items-center;
     h1 {
@@ -39,6 +47,11 @@
       @include for-desktop-large {
         @apply text-6xl;
       }
+    }
+    h1:hover {
+      @apply cursor-default;
+      color: $main;
+      -webkit-text-stroke-width: 0px;
     }
   }
 }
