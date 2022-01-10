@@ -19,7 +19,7 @@ export default function Home() {
                     <Video/>
                     <div className="varo__welcome-text">
                       <h1>
-                        Welcome! I'm Jakub Varinsky, web-developer & photographer. <br/>
+                        Welcome! I'm Jakub Varinsky, web-developer & photographer based in Sydney. <br/>
                         I love to help you with your next project.
                       </h1>
                     </div>

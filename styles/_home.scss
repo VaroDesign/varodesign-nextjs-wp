@@ -19,9 +19,9 @@
       @apply absolute top-0 right-0 bottom-0 left-0;
       content: "";
       background: radial-gradient(
-        ellipse farthest-side at 65% 45%,
+        ellipse farthest-side at 74% 45%,
         transparent 0,
-        transparent 65%,
+        transparent 80%,
         #000 100%
       );
     }
@@ -29,11 +29,16 @@
   &__welcome-text {
     @apply text-left pl-20 flex items-center;
     h1 {
-      @apply font-bold text-6xl;
-      font-family: 'Roboto';
+      @apply font-bold text-4xl;
       color: rgba(0, 0, 0, 0);
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $main;
+      @include for-laptop {
+        @apply text-5xl;
+      }
+      @include for-desktop-large {
+        @apply text-6xl;
+      }
     }
   }
 }
