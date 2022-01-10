@@ -5,6 +5,7 @@
 .varo {
   &__container {
     @apply h-screen flex flex-wrap overflow-hidden bg-black;
+    min-height: 773px;
   }
   &__inner-container {
     @apply relative w-full overflow-hidden lg:w-1/2;
@@ -26,11 +27,11 @@
     }
   }
   &__welcome-text {
-    @apply text-left pl-20;
+    @apply text-left pl-20 flex items-center;
     h1 {
       @apply font-bold text-6xl;
+      font-family: 'Roboto';
       color: rgba(0, 0, 0, 0);
-      font-family: roboto;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $main;
     }
