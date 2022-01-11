@@ -1,3 +1,5 @@
+@import "_breakpoints";
+
 .about {
   text-align: center;
     #tags {
@@ -8,15 +10,16 @@
       width: 113%;
     }
     .row {
-      margin: 2rem;
+      @apply my-8 mx-4;
       background-color: #121212;
       border-radius: 1rem;
-      box-shadow: inset 0 -0.125em 0.5em 0 rgb(0,0,0),
+      box-shadow: inset 0 -0.125em 0.5em 0 rgb(0,0,0);
+      @include for-tablet-landscape {
+        @apply my-8 mx-8;
+      }
     }
     .column {
-      margin: auto;
-      float: left;
-      padding: 10px;
+      @apply py-8 px-4 float-left m-auto;
     }
     .row:after {
       content: "";
@@ -41,9 +44,6 @@
         }
     }
     @media screen and (max-width: 768px) {
-      .row {
-        margin: 1.2rem;
-      }
       .column {
         width: 96% !important;
       }

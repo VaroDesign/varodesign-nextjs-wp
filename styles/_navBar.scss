@@ -39,7 +39,7 @@
       width: 80px;
       background-color: #333;
       color: $greyFont;
-      padding: 2px 0 5px;
+      padding: 5px 0;
       border-radius: 6px;
       left: 60px;
       z-index: 1;
@@ -64,8 +64,7 @@
 }
 .App-logo {
     pointer-events: none;
-    color: #bada55;
-    margin-bottom: 2px;
+    margin: 0 auto 6px auto;
   }
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
