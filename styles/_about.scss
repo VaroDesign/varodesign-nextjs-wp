@@ -6,7 +6,13 @@
       display: none;
       color: white;
     }
+    .headline {
+      @include for-laptop {
+        @apply mt-16;
+      }
+    }
     canvas {
+      @apply relative right-4;
       width: 113%;
     }
     .row {

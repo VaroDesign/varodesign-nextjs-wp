@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Logo = () => {
     return (
-        <div className="logo">
+        <div className="mini-logo">
         <Link href='/about'>
             <img src="/img/V-34x36.png" width="42" height="46" alt="logo"/>
         </Link>

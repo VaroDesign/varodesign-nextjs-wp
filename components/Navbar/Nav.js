@@ -17,11 +17,12 @@ export default function Nav () {
       });
         const router = useRouter();
         return (
-            <nav>
-                <div className="nav-menu">
+            <nav className="varo-nav">
+                
+                <div className="varo-nav__menu">
                     {NavItems.map((item) => {
                         return (
-                            <div key={item.title} className="nav-item">
+                            <div key={item.title} className="varo-nav__menu-item">
                                 <Link href={item.url}>
                                     <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName} alt={item.alt} />
                                 </Link>

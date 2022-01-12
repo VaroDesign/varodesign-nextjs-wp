@@ -1,25 +1,23 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import styles from '../../styles/Home.module.css';
-import blogStyles from '../../styles/Blog.module.css';
 import Navbar from '../../components/Navbar';
 
 import { getAllPosts } from '../../lib/api';
 
 const Blog = ({ allPosts: { edges } }) => (
-    <div className={styles.container}>
+    <div className="">
       <Head>
       <title>Jakub Varinsky | Blog</title>
       </Head> 
       <Navbar/>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Latest blog articles</h1>
+      <main className="">
+        <h1 className="">Latest blog articles</h1>
         <hr />
         <section>
           {edges.map(({ node }) => (
-            <div className={blogStyles.listitem} key={node.id}>
-              <div className={blogStyles.listitem__thumbnail}>
+            <div className="" key={node.id}>
+              <div className="{blogStyles.listitem__thumbnail}">
                 <figure>
                   <img
                     height={150}
@@ -28,7 +26,7 @@ const Blog = ({ allPosts: { edges } }) => (
                   />
                 </figure>
               </div>
-              <div className={blogStyles.listitem__content}>
+              <div className="{blogStyles.listitem__content}">
                 <h2>{node.title}</h2>
                 <p>{node.extraPostInfo.authorExcerpt}</p>
                 <Link href={`/blog/${node.slug}`}>

@@ -1,7 +1,74 @@
 @import 'colors';
-.logo img{
-  padding: 10px 0 0 8px;
-  cursor: pointer;
+@import "_breakpoints";
+
+.varo-navigation {
+  @apply bg-black fixed w-full;
+  z-index: 999;
+  @include for-laptop {
+    @apply h-full;
+    width: 50px;
+  }
+  .mini-logo img{
+    padding: 10px 0 10px 8px;
+    cursor: pointer;
+  }
+  .mini-logo, &__footer{
+    @apply hidden;
+    @include for-laptop {
+      @apply block;
+    }
+  }
+  &__footer {
+    color:$greyFont;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 200;
+    p {
+        margin-bottom: 1px;
+    }
+}
+.varo-nav {
+  @apply flex;
+  &__menu {
+    @apply flex items-center justify-between;
+    width: 325px;
+    text-align: center;
+    color: $greyFont;
+    @include for-laptop {
+      @apply flex flex-col m-auto;
+      width: 50px;
+    }
+    a {
+        display: block;
+        margin: 15px 0;
+    }
+  } 
+  &__menu-item {
+    @apply relative;
+    cursor: pointer;
+    @include for-laptop {
+      margin-bottom: 30px;
+    }
+      .tooltip {
+        @apply absolute invisible -top-0.5 text-center;
+        width: 80px;
+        background-color: #333;
+        color: $greyFont;
+        padding: 5px 0;
+        border-radius: 6px;
+        left: 60px;
+        z-index: 1;
+        text-shadow: none;
+      }
+      img {
+        @apply m-auto;
+        width: 1.7rem;
+      }
+  }
+  &__menu-item:hover .tooltip {
+    visibility: visible;
+  }
+}
 }
 
 .nav-menu a{
@@ -9,57 +76,21 @@
 }
 
 .nav-bar {
-    height: 100%;
-    width: 50px;
-    background-color: black;
-    position: fixed;
+    height: 50px;
+    width: 100%;
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
-    z-index: 999;
-}
-
-.nav-menu {
-    text-align: center;
-    color: $greyFont;
-    a {
-        display: block;
-        margin: 15px 0;
-    }
-}
-.nav-item {
-  @apply relative;
-  cursor: pointer;
-  margin-bottom: 30px;
-    .tooltip {
-      @apply absolute invisible -top-0.5 text-center;
-      width: 80px;
-      background-color: #333;
-      color: $greyFont;
-      padding: 5px 0;
-      border-radius: 6px;
-      left: 60px;
-      z-index: 1;
-      text-shadow: none;
-    }
-    img {
-      @apply m-auto;
-      width: 1.7rem;
-    }
-}
-.nav-item:hover .tooltip {
-  visibility: visible;
-}
-.footer {
-    color:$greyFont;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 200;
-    p {
-        margin-bottom: 1px;
+    flex-direction: row;
+    justify-content: center;
+    @include for-laptop {
+      height: 100%;
+      width: 50px;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      min-height: 500px;
+      justify-content: space-between;
     }
 }
 .App-logo {
