@@ -32,19 +32,19 @@ export default function Post({ postData }) {
     };
 
     return (
-        <div className={styles.container}>
+        <div className="">
             <Navbar/>
             <Head>
                 <title>{postData.title}</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.main}>
+            <main className="{styles.main}">
                 {router.isFallback ? (
                     <h2>Loading...</h2>
                 ) : (
-                    <article className={blogStyles.article}>
-                        <div className={blogStyles.postmeta}>
-                            <h1 className={styles.title}>{postData.title}</h1>
+                    <article className="{blogStyles.article}">
+                        <div className="{blogStyles.postmeta}">
+                            <h1 className="{styles.title}">{postData.title}</h1>
                             <p>{formatDate(postData.date)}</p>
                         </div>
                         <div 
