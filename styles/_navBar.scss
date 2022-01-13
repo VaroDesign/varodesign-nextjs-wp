@@ -1,11 +1,20 @@
 @import 'colors';
 @import "_breakpoints";
 
+.about-navigation {
+  @include for-laptop {
+    margin-top: 7px;
+  }
+  p {
+    @apply relative;
+    top: -3px;
+  }
+}
 .varo-navigation {
-  @apply bg-black fixed w-full bottom-0;
+  @apply bg-black fixed w-full bottom-0 py-2.5 left-0;
   z-index: 999;
   @include for-laptop {
-    @apply h-full;
+    @apply h-full p-0;
     width: 50px;
   }
   .mini-logo img{
@@ -31,7 +40,7 @@
   @apply flex;
   &__menu {
     @apply flex items-center justify-between;
-    width: 325px;
+    width: 355px;
     text-align: center;
     color: $greyFont;
     @include for-laptop {
@@ -40,9 +49,8 @@
     }
     a {
         display: block;
-        margin: 15px 0;
     }
-  } 
+  }
   &__menu-item {
     @apply relative;
     cursor: pointer;
@@ -50,7 +58,7 @@
       margin-bottom: 30px;
     }
       .tooltip {
-        @apply absolute invisible -top-1 text-center;
+        @apply absolute hidden invisible -top-1 text-center;
         width: 80px;
         background-color: #333;
         color: $greyFont;
@@ -59,6 +67,9 @@
         left: 60px;
         z-index: 1;
         text-shadow: none;
+        @include for-laptop {
+          @apply block;
+        }
       }
       img {
         @apply m-auto;
@@ -68,6 +79,20 @@
   &__menu-item:hover .tooltip {
     visibility: visible;
   }
+  &__link {
+    height: 48.8px;
+    @include for-laptop {
+      height: 27.19px;
+    }
+  }
+  &__text-mobile {
+    @apply block m-0;
+    font-size: 0.9rem;
+    color: $greyFont;
+    @include for-laptop {
+      @apply hidden;
+    }
+  }
 }
 }
 
@@ -76,21 +101,13 @@
 }
 
 .nav-bar {
+  @apply flex flex-row justify-center items-start w-full mt-1;
     height: 50px;
     width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     @include for-laptop {
-      height: 100%;
+      @apply h-full flex-col justify-between;
       width: 50px;
-      top: 0;
-      left: 0;
-      flex-direction: column;
       min-height: 500px;
-      justify-content: space-between;
     }
 }
 .App-logo {

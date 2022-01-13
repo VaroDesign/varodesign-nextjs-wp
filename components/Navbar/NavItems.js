@@ -1,6 +1,7 @@
 export const NavItems = [
     {
         title: 'Home',
+        textMobile: 'Home',
         url: '/',
         cName: 'nav-links',
         icon: '/icons/home.svg',
@@ -9,6 +10,7 @@ export const NavItems = [
     },
     {
         title: 'About',
+        textMobile: 'About',
         url: '/about',
         cName: 'nav-links',
         icon: "/icons/about.svg",
@@ -18,6 +20,7 @@ export const NavItems = [
 
     {
         title: 'Portfolio',
+        textMobile: 'Portfolio',
         url: '/portfolio',
         cName: 'portfolio',
         icon: "/icons/portfolio.svg",
@@ -26,6 +29,7 @@ export const NavItems = [
     },
     {
         title: 'Blog',
+        textMobile: 'Blog',
         url: '/blog',
         cName: 'blog',
         icon: "/icons/blog.svg",
@@ -34,6 +38,7 @@ export const NavItems = [
     },
     {
         title: 'Contact',
+        textMobile: 'Contact',
         url: '/contact',
         cName: 'nav-links',
         icon: "/icons/contact.svg",

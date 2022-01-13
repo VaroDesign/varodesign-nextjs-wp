@@ -24,9 +24,15 @@ export default function Nav () {
                         return (
                             <div key={item.title} className="varo-nav__menu-item">
                                 <Link href={item.url}>
-                                    <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName} alt={item.alt} />
+                                    <div className="varo-nav__link">
+                                        <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName} alt={item.alt} height={27} />
+                                        <p className="varo-nav__text-mobile" style={router.pathname == item.url ? {color: '#93824e'} : {color: '#999'} }>
+                                            {item.textMobile}
+                                        </p>
+                                    </div>
                                 </Link>
                                 <span className="tooltip">{item.title}</span>
+
                             </div>
                         )
                     })}
