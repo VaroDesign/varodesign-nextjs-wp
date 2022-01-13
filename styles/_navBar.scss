@@ -2,7 +2,7 @@
 @import "_breakpoints";
 
 .varo-navigation {
-  @apply bg-black fixed w-full;
+  @apply bg-black fixed w-full bottom-0;
   z-index: 999;
   @include for-laptop {
     @apply h-full;
@@ -50,7 +50,7 @@
       margin-bottom: 30px;
     }
       .tooltip {
-        @apply absolute invisible -top-0.5 text-center;
+        @apply absolute invisible -top-1 text-center;
         width: 80px;
         background-color: #333;
         color: $greyFont;
