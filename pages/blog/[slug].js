@@ -7,8 +7,6 @@ import React, { useEffect } from "react";
 import { getAllPostsWithSlug, getPost } from '../../lib/api';
 
 // styles
-import styles from '../../styles/Home.module.css';
-import blogStyles from '../../styles/Blog.module.css';
 import Navbar from '../../components/Navbar';
 
 export default function Post({ postData }) {
