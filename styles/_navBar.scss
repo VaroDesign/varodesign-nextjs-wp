@@ -48,7 +48,7 @@
       width: 50px;
     }
     a {
-        display: block;
+        @apply no-underline;
     }
   }
   &__menu-item {
@@ -73,7 +73,10 @@
       }
       img {
         @apply m-auto;
-        width: 1.7rem;
+        width: 1.5rem;
+        @include for-laptop {
+          width: 1.7rem;
+        }
       }
   }
   &__menu-item:hover .tooltip {
@@ -87,7 +90,7 @@
   }
   &__text-mobile {
     @apply block m-0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: $greyFont;
     @include for-laptop {
       @apply hidden;

@@ -4,12 +4,18 @@
 
 .varo {
   &__container {
-    @apply h-screen flex flex-wrap overflow-hidden bg-black;
-    min-height: 773px;
+    @apply flex flex-wrap overflow-hidden bg-black;
+    @include for-laptop {
+      @apply h-screen;
+      min-height: 773px;
+    }
   }
   &__inner-container {
     @apply relative w-full overflow-hidden lg:w-1/2;
-    left: 50px;
+    height: 540px;
+    @include for-laptop {
+      left: 50px;
+    }
   }
   &__bg-img {
     @apply absolute w-full h-full right-0 bg-cover bg-no-repeat opacity-80;
@@ -19,14 +25,23 @@
       @apply absolute top-0 right-0 bottom-0 left-0;
       content: "";
       background: radial-gradient(
-        ellipse farthest-side at 74% 45%,
+        ellipse farthest-side at 68% 52%,
         transparent 0,
-        transparent 80%,
+        transparent 70%,
         #000 100%
       );
+      @include for-laptop {
+        background: radial-gradient(
+          ellipse farthest-side at 74% 45%,
+          transparent 0,
+          transparent 80%,
+          #000 100%
+        );
+      }
     }
   }
   &__logo-video {
+    @apply mt-6;
     @include for-tablet-landscape {
       @apply mt-10 mb-8;
     }
@@ -35,7 +50,10 @@
     }
   }
   &__welcome-text {
-    @apply text-left pl-20 flex items-center;
+    @apply text-left px-8 flex items-center text-center;
+    @include for-laptop {
+      @apply pl-20 text-left;
+    }
     h1 {
       @apply font-bold text-4xl;
       color: rgba(0, 0, 0, 0);

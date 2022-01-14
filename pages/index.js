@@ -30,7 +30,6 @@ export default function Home() {
                 <div className="varo__bg-img"></div>
             </div>
         </div>
-        <div className="varo__bg-img"></div>
       </main>
       </div>
   )
