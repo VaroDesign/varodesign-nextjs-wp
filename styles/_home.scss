@@ -3,18 +3,20 @@
 
 
 .varo {
-  &__container {
-    @apply flex flex-wrap overflow-hidden bg-black;
+  &-container {
     @include for-laptop {
       @apply h-screen;
       min-height: 773px;
     }
   }
-  &__inner-container {
-    @apply relative w-full overflow-hidden lg:w-1/2;
+  &-container-inner {
+    @apply bg-black;
     height: 540px;
     @include for-laptop {
-      left: 50px;
+      @apply h-full;
+    }
+    &:last-child{
+      margin-bottom: 74px;
     }
   }
   &__bg-img {

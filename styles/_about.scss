@@ -1,44 +1,46 @@
 @import "_breakpoints";
 
 .about {
-  text-align: center;
+  @apply text-center;
+  .varo-container {
+    &-inner {
+      @apply h-full px-6;
+      background-color: #181818;
+      @include for-laptop {
+        @apply px-20;
+        left: 50px;
+        width: calc(100% - 50px);
+      }
+    }
+    &__content {
+      @apply items-center;
+      @include for-laptop {
+        @apply pr-8;
+      }
+    }
+    &__content-inner:first-child {
+      @include for-laptop {
+        width: 55%;
+      }
+    }
+    &__content-inner:nth-child(2) {
+      @include for-laptop {
+        @apply justify-end;
+        width: 45%;
+      }
+    }
+  }
     #tags {
       display: none;
       color: white;
     }
     .headline {
       @include for-laptop {
-        @apply mt-16;
       }
     }
     canvas {
-      @apply relative right-4;
+      @apply relative;
       width: 113%;
-    }
-    .row {
-      @apply my-8 mx-4;
-      background-color: #121212;
-      border-radius: 1rem;
-      box-shadow: inset 0 -0.125em 0.5em 0 rgb(0,0,0);
-      @include for-tablet-landscape {
-        @apply my-8 mx-8;
-      }
-    }
-    .column {
-      @apply py-8 px-4 float-left m-auto;
-    }
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    .column:first-child {
-      width: 55%;
-      flex: none;
-    }
-    .column:nth-child(2) {
-      width: 40%;
-      flex: none;
     }
     @media screen and (max-width: 942px) {
         .column {
@@ -60,5 +62,4 @@
         width: 96%;
       }
     }
-
 }

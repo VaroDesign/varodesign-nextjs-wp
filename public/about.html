@@ -30,10 +30,8 @@
         padding-top: 8px;
     }
 </style>
-
 <body>
     <div id="__next">
-        <div class="container">
             <div class="varo-navigation">
                 <div class="mobile-logo"></div>
                 <div class="nav-bar">
@@ -87,46 +85,46 @@
                 </div>
             </div>
             <main class="about">
-                <div class="headline">
-                    <h2>About Me</h2>
-                    <p>Check out my timeline story, skills, and technology that I use.</p>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="content-left">
-                            <div class="section-body">
-                                <div class="quick-timeline" data-source="json" data-items="5" data-style="3"
-                                    data-loop="false"></div>
+                <div class="varo-container">
+                    <div class="varo-container-inner">
+                        <div class="headline">
+                            <h2>About Me</h2>
+                            <p>Check out my timeline story, skills, and technology that I use.</p>
+                        </div>
+                        <div class="varo-container__content">
+                            <div class="varo-container__content-inner">
+                                <div class="section-body">
+                                    <div class="quick-timeline" data-source="json" data-items="5" data-style="3"
+                                    data-loop="false">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="varo-container__content-inner">
+                                <canvas width="700" height="600" id="varoTags">
+                                    <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                                </canvas>
+                            </div>
+                            <div id="tags">
+                                <ul>
+                                    <li><a href="http://www.google.com" target="_blank">jQuery</a></li>
+                                    <li><a href="/fish">JavaScript</a></li>
+                                    <li><a href="/chips">NextJS</a></li>
+                                    <li><a href="/salt">ReactJS</a></li>
+                                    <li><a href="/vinegar">NunJucks</a></li>
+                                    <li><a href="/vinegar">SASS</a></li>
+                                    <li><a href="/vinegar">HTML</a></li>
+                                    <li><a href="/vinegar">Git</a></li>
+                                    <li><a href="/vinegar">WordPress</a></li>
+                                    <li><a href="/vinegar">PHP</a></li>
+                                    <li><a href="/vinegar">Photoshop</a></li>
+                                    <li><a href="/vinegar">Illustrator</a></li>
+                                    <li><a href="/vinegar">Canon 80d</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="content-right">
-                            <canvas width="700" height="600" id="varoTags">
-                                <p>Anything in here will be replaced on browsers that support the canvas element</p>
-                            </canvas>
-                        </div>
-                    </div>
-                    <div id="tags">
-                        <ul>
-                            <li><a href="http://www.google.com" target="_blank">jQuery</a></li>
-                            <li><a href="/fish">JavaScript</a></li>
-                            <li><a href="/chips">NextJS</a></li>
-                            <li><a href="/salt">ReactJS</a></li>
-                            <li><a href="/vinegar">NunJucks</a></li>
-                            <li><a href="/vinegar">SASS</a></li>
-                            <li><a href="/vinegar">HTML</a></li>
-                            <li><a href="/vinegar">Git</a></li>
-                            <li><a href="/vinegar">WordPress</a></li>
-                            <li><a href="/vinegar">PHP</a></li>
-                            <li><a href="/vinegar">Photoshop</a></li>
-                            <li><a href="/vinegar">Illustrator</a></li>
-                            <li><a href="/vinegar">Canon 80d</a></li>
-                        </ul>
-                    </div>
                 </div>
             </main>
-        </div>
     </div>
 </body>
 

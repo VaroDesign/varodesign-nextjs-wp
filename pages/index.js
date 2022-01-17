@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <Navbar/>
       <main>
-        <div className="varo__container">
-            <div className="varo__inner-container">
+        <div className="varo-container">
+            <div className="varo-container-inner">
                 <div className="varo__logo-video">
                     <Video/>
                 </div>
@@ -26,7 +26,7 @@ export default function Home() {
                       </h1>
                 </div>
             </div>
-            <div className="varo__inner-container">
+            <div className="varo-container-inner">
                 <div className="varo__bg-img"></div>
             </div>
         </div>
