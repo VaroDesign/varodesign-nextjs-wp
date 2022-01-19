@@ -1,8 +1,8 @@
 @import "_breakpoints";
 
-.about {
+.VaroDesign-About {
   @apply text-center;
-  .varo-container {
+  .varo__container {
     &-inner {
       @apply h-full px-6;
       background-color: #181818;
@@ -19,11 +19,14 @@
       }
     }
     &__content-inner:first-child {
+      @apply mb-6;
       @include for-laptop {
+        @apply mb-0;
         width: 55%;
       }
     }
     &__content-inner:nth-child(2) {
+      overflow: unset;
       @include for-laptop {
         @apply justify-end;
         width: 45%;
@@ -35,6 +38,7 @@
       color: white;
     }
     .headline {
+      @apply mb-12;
       @include for-laptop {
       }
     }

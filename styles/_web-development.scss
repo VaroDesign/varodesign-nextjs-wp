@@ -1,25 +1,20 @@
 @import "_breakpoints";
 @import 'colors';
 
-.varo-web {
-    &__container {
-        @apply min-h-screen overflow-hidden bg-black;
-    }
-    &__outer-container {
-        @apply relative flex flex-wrap justify-center;
-        max-width: 1400px;
-        @include for-tablet {
-            @apply m-auto;
-            left: 50px;
-            justify-content: normal;
-        }
-    }
-    &__inner-container {
-        @apply relative overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4;
-       
-        width: 325px;
-        @include for-tablet {
-            @apply m-0;
+.VaroDesign-WebDevelopment {
+    .varo {
+        &__container {
+            @apply block;
+            &-inner {
+                @apply cursor-pointer relative overflow-hidden sm:w-1/2 md:w-1/2 lg:w-1/3 p-0 mx-4  mb-12; 
+                max-width: 391px;
+                height: 405px;
+                @include for-tablet {
+                }
+                @include for-desktop-large {
+                    @apply xl:w-1/4;
+                }
+            }
         }
     }
 }

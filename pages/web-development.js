@@ -5,25 +5,27 @@ import Head from 'next/head';
 
 export default function WebDevelopment() {
   return (
-    <div className="VaroDesign">
+    <div className="VaroDesign-WebDevelopment">
       <Head>
         <title>Jakub Varinsky | Web Developer & Photographer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
       <main>
-        <div className="varo-web__container">
-          <div className="varo-web__outer-container">
+        <div className="varo__container">
+          <div className="varo__container-outer">
             {WebPortfolio.map((item) => {
                 return (
-                    <div key={item.title} className="varo-web__inner-container">
-                      <div className="varo-web__client-logo"> 
-                        <img src={item.imgUrl} className="entry-title entry-title-portfolio" />    
+                  <Link className="varo__container-link" href="/kok">
+                    <div key={item.title} className="varo__container-inner">
+                      <div className="varo__client-logo"> 
+                        <img src={item.imgUrl} alt={item.title} />    
                       </div>
-                      <div className="varo-web__client-name">  
-                        {item.title}
+                      <div className="varo__client-name">  
+                        <h3>{item.title}</h3>
                       </div>
                     </div>
+                  </Link>
                 )
             })}
           </div>

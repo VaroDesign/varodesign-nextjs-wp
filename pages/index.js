@@ -7,15 +7,15 @@ import Video from '../components/homepage/video';
 
 export default function Home() {
   return (
-    <div className="VaroDesign">
+    <div className="VaroDesign-Home">
       <Head>
         <title>Jakub Varinsky | Web Developer & Photographer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
       <main>
-        <div className="varo-container">
-            <div className="varo-container-inner">
+        <div className="varo__container">
+            <div className="varo__container-inner">
                 <div className="varo__logo-video">
                     <Video/>
                 </div>
@@ -26,7 +26,7 @@ export default function Home() {
                       </h1>
                 </div>
             </div>
-            <div className="varo-container-inner">
+            <div className="varo__container-inner">
                 <div className="varo__bg-img"></div>
             </div>
         </div>

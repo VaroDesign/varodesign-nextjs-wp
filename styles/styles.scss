@@ -6,6 +6,8 @@
 @import "containers";
 @import "breakpoints.scss";
 @import "_web-development.scss";
+@import "_clients.scss";
+@import "_typography.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
 
 * {
@@ -17,16 +19,4 @@ body {
     margin: 0;
     font-family: Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: $main;
-    margin-bottom: 0;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #999999;
-    text-shadow: 4px 4px 10px rgb(0,0,0);
 }

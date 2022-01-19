@@ -1,0 +1,13 @@
+h2 {
+    font-size: 2.5rem;
+    color: $main;
+    margin-bottom: 0;
+}
+h3 {
+    @apply text-xl text-greyText;
+}
+p {
+    font-size: 1rem;
+    color: #999999;
+    text-shadow: 4px 4px 10px rgb(0,0,0);
+}

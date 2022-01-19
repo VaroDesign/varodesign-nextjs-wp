@@ -1,121 +1,122 @@
 @import "_colors";
 @import "_breakpoints";
 
-
-.varo {
-  &-container {
-    @include for-laptop {
-      @apply h-screen;
-      min-height: 773px;
-    }
-  }
-  &-container-inner {
-    @apply bg-black;
-    height: 540px;
-    @include for-laptop {
-      @apply h-full;
-    }
-    &:last-child{
-      margin-bottom: 74px;
-    }
-  }
-  &__bg-img {
-    @apply absolute w-full h-full right-0 bg-cover bg-no-repeat opacity-80;
-    background-image: url('/img/in-office.jpg');
-    max-width: 800px;
-    &::after {
-      @apply absolute top-0 right-0 bottom-0 left-0;
-      content: "";
-      background: radial-gradient(
-        ellipse farthest-side at 68% 52%,
-        transparent 0,
-        transparent 70%,
-        #000 100%
-      );
+.VaroDesign-Home {
+  .varo {
+    &__container {
       @include for-laptop {
+        @apply h-screen;
+        min-height: 773px;
+      }
+    }
+    &__container-inner {
+      @apply bg-black;
+      height: 540px;
+      @include for-laptop {
+        @apply h-full;
+      }
+      &:last-child{
+        margin-bottom: 74px;
+      }
+    }
+    &__bg-img {
+      @apply absolute w-full h-full right-0 bg-cover bg-no-repeat opacity-80;
+      background-image: url('/img/in-office.jpg');
+      max-width: 800px;
+      &::after {
+        @apply absolute top-0 right-0 bottom-0 left-0;
+        content: "";
         background: radial-gradient(
-          ellipse farthest-side at 74% 45%,
+          ellipse farthest-side at 68% 52%,
           transparent 0,
-          transparent 80%,
+          transparent 70%,
           #000 100%
         );
+        @include for-laptop {
+          background: radial-gradient(
+            ellipse farthest-side at 74% 45%,
+            transparent 0,
+            transparent 80%,
+            #000 100%
+          );
+        }
       }
     }
-  }
-  &__logo-video {
-    @apply mt-6;
-    @include for-tablet-landscape {
-      @apply mt-10 mb-8;
-    }
-    @include for-desktop-large {
-      @apply mt-24 mb-8;
-    }
-  }
-  &__welcome-text {
-    @apply text-left px-8 flex items-center text-center;
-    @include for-laptop {
-      @apply pl-20 text-left;
-    }
-    h1 {
-      @apply font-bold text-4xl;
-      color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: $main;
-      @include for-laptop {
-        @apply text-5xl;
+    &__logo-video {
+      @apply mt-6;
+      @include for-tablet-landscape {
+        @apply mt-10 mb-8;
       }
       @include for-desktop-large {
-        @apply text-6xl;
+        @apply mt-24 mb-8;
       }
     }
-    h1:hover {
-      @apply cursor-default;
+    &__welcome-text {
+      @apply text-left px-8 flex items-center text-center;
+      @include for-laptop {
+        @apply pl-20 text-left;
+      }
+      h1 {
+        @apply font-bold text-4xl;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $main;
+        @include for-laptop {
+          @apply text-5xl;
+        }
+        @include for-desktop-large {
+          @apply text-6xl;
+        }
+      }
+      h1:hover {
+        @apply cursor-default;
+        color: $main;
+        -webkit-text-stroke-width: 0px;
+      }
+    }
+  }
+
+  .welcome-text {
+    @apply text-white;
+    @include for-laptop {
+      @apply text-pink-600;
+    }
+  }
+  .name {
+    @apply font-bold;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vh;
+    text-align: right;
+    h2 {
+      color: rgba(0, 0, 0, 0);
+      font-family: roboto;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $main;
+      font-size: 7rem;
+      margin: 0;
+      cursor: default;
+    }
+    h2:hover {
       color: $main;
       -webkit-text-stroke-width: 0px;
     }
   }
-}
 
-.welcome-text {
-  @apply text-white;
-  @include for-laptop {
-    @apply text-pink-600;
-  }
-}
-.name {
-  @apply font-bold;
-  position: absolute;
-  right: 1vw;
-  bottom: 1vh;
-  text-align: right;
-  h2 {
-    color: rgba(0, 0, 0, 0);
-    font-family: roboto;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $main;
-    font-size: 7rem;
-    margin: 0;
-    cursor: default;
-  }
-  h2:hover {
-    color: $main;
-    -webkit-text-stroke-width: 0px;
-  }
-}
-
-.welcome-container {
-  position: absolute;
-  left: 0;
-  top: 1vh;
-  width: 50%;
-  h2 {
-    color: $main;
-    font-size: 8rem;
-    margin: 0;
-  }
-  video {
-    @apply m-auto;
-    width: 60%;
-    height: 60%;
+  .welcome__container {
+    position: absolute;
+    left: 0;
+    top: 1vh;
+    width: 50%;
+    h2 {
+      color: $main;
+      font-size: 8rem;
+      margin: 0;
+    }
+    video {
+      @apply m-auto;
+      width: 60%;
+      height: 60%;
+    }
   }
 }
