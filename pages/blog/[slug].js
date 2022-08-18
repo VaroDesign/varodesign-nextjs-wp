@@ -34,7 +34,6 @@ export default function Post({ postData }) {
             <Navbar/>
             <Head>
                 <title>{postData.title}</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="{styles.main}">
                 {router.isFallback ? (

@@ -8,7 +8,6 @@ export default function WebDevelopment() {
     <div className="VaroDesign-WebDevelopment">
       <Head>
         <title>Jakub Varinsky | Web Developer & Photographer</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
       <main>

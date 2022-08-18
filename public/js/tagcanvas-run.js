@@ -1,6 +1,6 @@
 setTimeout(function() {
     try {
-      TagCanvas.Start('varoTags','tags',{
+      TagCanvas.Start('VaroBoy__Tags','tags',{
         textColour: '#fff',
         outlineColour: 'rgba(0,0,0,0)',
         depth: 0.8,
@@ -10,7 +10,7 @@ setTimeout(function() {
       });
     } catch(e) {
       // something went wrong, hide the canvas container
-      document.getElementById('varoTags').style.display = 'none';
+      document.getElementById('VaroBoy__Tags').style.display = 'none';
     }
-    TagCanvas.SetSpeed('varoTags', [0.03, -0.04]);
+    TagCanvas.SetSpeed('VaroBoy__Tags', [0.03, -0.04]);
   }, 50);

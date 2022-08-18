@@ -1,12 +1,11 @@
 @import "_breakpoints";
 
-.varo__container {
+.VaroBoy__container {
   @apply flex flex-wrap overflow-hidden;
   &-inner {
     @apply relative w-full overflow-hidden lg:w-1/2;
     @include for-laptop {
       @apply px-20;
-      left: 50px;
     }
   }
   &-outer {

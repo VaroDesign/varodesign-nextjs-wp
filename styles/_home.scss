@@ -1,8 +1,7 @@
 @import "_colors";
-@import "_breakpoints";
 
-.VaroDesign-Home {
-  .varo {
+.VaroBoy__Home {
+  .VaroBoy {
     &__container {
       @include for-laptop {
         @apply h-screen;

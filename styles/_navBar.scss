@@ -17,8 +17,9 @@
     @apply h-full p-0;
     width: 50px;
   }
-  .mini-logo img{
+  .mini-logo{
     padding: 10px 0 10px 8px;
+    width: 45px;
     cursor: pointer;
   }
   .mini-logo, &__footer{

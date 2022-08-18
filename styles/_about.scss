@@ -1,14 +1,14 @@
 @import "_breakpoints";
 
-.VaroDesign-About {
+.VaroBoy-About {
   @apply text-center;
-  .varo__container {
+  .VaroBoy__container {
     &-inner {
       @apply h-full px-6;
       background-color: #181818;
       @include for-laptop {
         @apply px-20;
-        left: 50px;
+        left: 25px;
         width: calc(100% - 50px);
       }
     }
