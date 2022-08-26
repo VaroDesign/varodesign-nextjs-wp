@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Svg from "../public/img/VaroBoy-logo-alt.svg";
 
 import Video from '../components/homepage/video';
 
@@ -15,7 +14,6 @@ export default function Home() {
         <div className="VaroBoy__container">
             <div className="VaroBoy__container-inner">
               <div>
-                <Svg/>
               </div>
                 <div className="VaroBoy__logo-video">
                     <Video/>
