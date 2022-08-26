@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head'
 import Navbar from '../components/Navbar';
+import Script from 'next/script'
 
 import Video from '../components/homepage/video';
 
@@ -10,8 +11,6 @@ export default function Contact() {
       <Head>
         <title>Jakub Varinsky | Web Developer & Photographer</title>
         <script src="/js/jquery.min.js"></script>
-        <script src="/js/owl.carousel.min.js"></script>
-        <script src="/js/timeline.js"></script>
         <script type="text/javascript" src="/js/tagcanvas.min.js"></script>
         <script type="text/javascript" src="/js/tagcanvas-run.js"></script>
         <link rel="stylesheet" href="/css/simple-line-icons.css"></link>
@@ -60,6 +59,8 @@ export default function Contact() {
                     </div>
                 </div>
             </main>
+            <Script src="/js/timeline.js"/>
+            <Script src="/js/owl.carousel.min.js"/>
     </div>
   )
 }
