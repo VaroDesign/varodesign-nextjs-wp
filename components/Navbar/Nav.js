@@ -17,22 +17,20 @@ export default function Nav () {
       });
         const router = useRouter();
         return (
-            <nav className="varo-nav">
-                
-                <div className="varo-nav__menu">
+            <nav className="VaroBoy__navigation-nav">
+                <div className="VaroBoy__navigation-nav--menu">
                     {NavItems.map((item) => {
                         return (
-                            <div key={item.title} className="varo-nav__menu-item">
+                            <div key={item.title} className="VaroBoy__navigation-nav--menu-item">
                                 <Link href={item.url}>
-                                    <div className="varo-nav__link">
+                                    <div className="VaroBoy__navigation-nav--link">
                                         <img src={router.pathname == item.url ? item.iconActive : item.icon} className={item.cName} alt={item.alt} height={27} />
-                                        <p className="varo-nav__text-mobile" style={router.pathname == item.url ? {color: '#93824e'} : {color: '#999'} }>
+                                        <p className="VaroBoy__navigation-nav--text-mobile" style={router.pathname == item.url ? {color: '#93824e'} : {color: '#999'} }>
                                             {item.textMobile}
                                         </p>
                                     </div>
                                 </Link>
-                                <span className="tooltip">{item.title}</span>
-
+                                <span className="VaroBoy__tooltip">{item.title}</span>
                             </div>
                         )
                     })}

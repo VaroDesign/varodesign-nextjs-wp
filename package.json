@@ -11,10 +11,11 @@
     "css": "node-sass --output-style compressed -o public styles/styles.scss && npx tailwindcss -i public/styles.css -o public/css/styles.css --minify"
   },
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.19",
+    "@fullpage/react-fullpage": "^0.1.28",
     "@svgr/webpack": "^6.3.1",
-    "create-next-app": "^12.2.5",
-    "next": "^12.2.0",
+    "caniuse-lite": "^1.0.30001407",
+    "create-next-app": "^12.3.1",
+    "next": "^12.3.1",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.5",
     "react": "^17.0.2",
@@ -23,10 +24,10 @@
     "react-photo-feed": "^1.0.13",
     "react-popupbox": "^2.0.8",
     "react-transition-group": "^4.4.1",
-    "sass": "^1.32.7"
+    "sass": "^1.54.9"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.12",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "node-sass": "^6.0.0",

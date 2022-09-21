@@ -9,7 +9,7 @@
       }
     }
     &__container-inner {
-      @apply bg-black;
+      @apply bg-black px-0;
       height: 540px;
       @include for-laptop {
         @apply h-full;
@@ -41,19 +41,23 @@
         }
       }
     }
-    &__logo-video {
-      @apply mt-6;
-      @include for-tablet-landscape {
-        @apply mt-10 mb-8;
-      }
-      @include for-desktop-large {
-        @apply mt-24 mb-8;
+    &__logo {
+      @apply px-5;
+      margin: 50px auto 20px;
+      max-width: 600px;
+      @include for-laptop {
+        @apply relative m-0 p-0;
+        top: 50px;
       }
     }
     &__welcome-text {
-      @apply text-left px-8 flex items-center text-center;
+      @apply px-5 text-center;
       @include for-laptop {
-        @apply pl-20 text-left;
+        @apply text-left;
+        padding: 1rem 1.25rem 0 6.3rem;
+      }
+      @include for-desktop {
+        @apply pl-32;
       }
       h1 {
         @apply font-bold text-4xl;
@@ -65,6 +69,7 @@
         }
         @include for-desktop-large {
           @apply text-6xl;
+          line-height: 1.2;
         }
       }
       h1:hover {

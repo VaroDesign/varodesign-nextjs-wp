@@ -1,10 +1,11 @@
+@import "breakpoints";
 @import "navBar";
 @import "portfolio";
 @import "filter";
 @import "about";
 @import "home";
+@import "tooltip";
 @import "containers";
-@import "breakpoints.scss";
 @import "_web-development.scss";
 @import "_clients.scss";
 @import "_typography.scss";
@@ -22,7 +23,7 @@ body {
 }
 
 main {
-  @include for-desktop {
+  @include for-laptop {
     margin-left: 50px;
   }
 }

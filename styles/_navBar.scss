@@ -1,76 +1,51 @@
-@import 'colors';
-@import "_breakpoints";
+@import "colors";
 
-.about-navigation {
-  @include for-laptop {
-    margin-top: 7px;
-  }
-  p {
-    @apply relative;
-    top: -3px;
-  }
-}
-.varo-navigation {
+.VaroBoy__navigation {
   @apply bg-black fixed w-full bottom-0 py-2.5 left-0;
   z-index: 999;
   @include for-laptop {
     @apply h-full p-0;
     width: 50px;
   }
-  .mini-logo{
+  &-bar {
+    @apply flex flex-row justify-center items-start w-full mt-1;
+    height: 50px;
+    width: 100%;
+    @include for-laptop {
+      @apply h-full flex-col justify-between;
+      width: 50px;
+      min-height: 500px;
+    }
+  }
+  .VaroBoy__mini-logo {
     padding: 10px 0 10px 8px;
     width: 45px;
     cursor: pointer;
   }
-  .mini-logo, &__footer{
+  .VaroBoy__mini-logo, &--footer{
     @apply hidden;
     @include for-laptop {
       @apply block;
     }
   }
-  &__footer {
-    color:$greyFont;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 200;
-    p {
-        margin-bottom: 1px;
-    }
-}
-.varo-nav {
-  @apply flex;
-  &__menu {
-    @apply flex items-center justify-between;
-    width: 355px;
-    text-align: center;
-    color: $greyFont;
-    @include for-laptop {
-      @apply flex flex-col m-auto;
-      width: 50px;
+  &-nav {
+    @apply flex;
+    &--menu {
+      @apply flex text-center items-center justify-between;
+      width: 355px;
+      color: $greyFont;
+      @include for-laptop {
+        @apply flex flex-col m-auto;
+        width: 50px;
+      }
     }
     a {
         @apply no-underline;
     }
-  }
-  &__menu-item {
-    @apply relative;
-    cursor: pointer;
-    @include for-laptop {
-      margin-bottom: 30px;
-    }
-      .tooltip {
-        @apply absolute hidden invisible -top-1 text-center;
-        width: 80px;
-        background-color: #333;
-        color: $greyFont;
-        padding: 5px 0;
-        border-radius: 6px;
-        left: 60px;
-        z-index: 1;
-        text-shadow: none;
-        @include for-laptop {
-          @apply block;
-        }
+    &--menu-item {
+      @apply relative cursor-pointer;
+      @include for-laptop {
+        margin-bottom: 30px;
       }
       img {
         @apply m-auto;
@@ -79,40 +54,34 @@
           width: 1.7rem;
         }
       }
-  }
-  &__menu-item:hover .tooltip {
-    visibility: visible;
-  }
-  &__link {
-    height: 48.8px;
-    @include for-laptop {
-      height: 27.19px;
+    }
+    &--menu-item:hover .VaroBoy__tooltip {
+      visibility: visible;
+    }
+    &--link {
+      height: 48.8px;
+      @include for-laptop {
+        height: 27.19px;
+      }
+    }
+    &--text-mobile {
+      @apply block m-0;
+      font-size: 0.8rem;
+      color: $greyFont;
+      @include for-laptop {
+        @apply hidden;
+      }
     }
   }
-  &__text-mobile {
-    @apply block m-0;
-    font-size: 0.8rem;
-    color: $greyFont;
-    @include for-laptop {
-      @apply hidden;
+  &--footer {
+    color:$greyFont;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 200;
+    p {
+        margin-bottom: 1px;
     }
   }
-}
-}
-
-.nav-menu a{
-  margin: 0 !important;
-}
-
-.nav-bar {
-  @apply flex flex-row justify-center items-start w-full mt-1;
-    height: 50px;
-    width: 100%;
-    @include for-laptop {
-      @apply h-full flex-col justify-between;
-      width: 50px;
-      min-height: 500px;
-    }
 }
 .App-logo {
     pointer-events: none;

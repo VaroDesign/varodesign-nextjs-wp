@@ -2,8 +2,6 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import VaroLogo from "../public/img/VaroBoy-Logo-alt.svg";
 
-import Video from '../components/homepage/video';
-
 export default function Home() {
   return (
     <div className="VaroBoy__Home">
@@ -14,24 +12,21 @@ export default function Home() {
       <main>
         <div className="VaroBoy__container">
             <div className="VaroBoy__container-inner">
-              <div>
+              <div className="VaroBoy__logo">
                 <VaroLogo/>
               </div>
-                <div className="VaroBoy__logo-video">
-                    <Video/>
-                </div>
-                <div className="VaroBoy__welcome-text">
-                      <h1>
-                        Welcome! I'm Jakub Varinsky, web-developer & photographer based in Sydney. <br/>
-                        I love to help you with your next project.
-                      </h1>
-                </div>
+              <div className="VaroBoy__welcome-text">
+                    <h1>
+                      Welcome! I'm Jakub Varinsky, web-developer & photographer based in Sydney. <br/>
+                      I love to help you with your next project.
+                    </h1>
+              </div>
             </div>
             <div className="VaroBoy__container-inner">
                 <div className="VaroBoy__bg-img"></div>
             </div>
         </div>
       </main>
-      </div>
+    </div>
   )
 }

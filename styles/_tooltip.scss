@@ -1,0 +1,14 @@
+.VaroBoy__tooltip {
+    @apply absolute hidden invisible -top-1 text-center;
+    width: 80px;
+    background-color: #333;
+    color: $greyFont;
+    padding: 5px 0;
+    border-radius: 6px;
+    left: 60px;
+    z-index: 1;
+    text-shadow: none;
+    @include for-laptop {
+      @apply block;
+    }
+  }
