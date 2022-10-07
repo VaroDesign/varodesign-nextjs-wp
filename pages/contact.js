@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head'
 import Navbar from '../components/Navbar';
-
 import Video from '../components/homepage/video';
 
 export default function Contact() {

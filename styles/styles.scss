@@ -1,14 +1,19 @@
 @import "breakpoints";
-@import "navBar";
-@import "portfolio";
+@import "typography";
 @import "filter";
-@import "about";
-@import "home";
+
+@import "navBar";
 @import "tooltip";
+
 @import "containers";
-@import "_web-development.scss";
-@import "_clients.scss";
-@import "_typography.scss";
+
+@import "home";
+@import "about";
+@import "portfolio";
+@import "blog";
+@import "web-development";
+@import "clients";
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
 
 * {

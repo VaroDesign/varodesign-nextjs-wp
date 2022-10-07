@@ -1,69 +1,63 @@
-@import "_breakpoints";
-
-.VaroBoy-About {
-  @apply text-center;
-  .VaroBoy__container {
-    &-inner {
-      @apply h-full px-6;
-      background-color: #181818;
-      @include for-laptop {
-        @apply px-20;
-        left: 25px;
-        width: calc(100% - 50px);
+.VaroBoy__About {
+  .VaroBoy {
+    &__container{
+      &-inner {
+        @apply h-full bg-darkGrey;
+        padding: 0 1.5rem 6rem 1.5rem;
+        
+        @include for-laptop {
+          padding: 0 5rem 2rem;
+          left: 25px;
+          width: calc(100% - 50px);
+        }
       }
-    }
-    &__content {
-      @apply items-center;
-      @include for-laptop {
-        @apply pr-8;
+      &--content {
+        @apply items-center;
+        @include for-laptop {
+          @apply pr-8;
+        }
       }
-    }
-    &__content-inner:first-child {
-      @apply mb-6;
-      @include for-laptop {
-        @apply mb-0;
-        width: 55%;
+      &--content-inner:first-child {
+        @apply mb-6;
+        @include for-laptop {
+          @apply mb-0;
+          width: 55%;
+        }
       }
-    }
-    &__content-inner:nth-child(2) {
-      overflow: unset;
-      @include for-laptop {
-        @apply justify-end;
-        width: 45%;
+      &--content-inner:nth-child(2) {
+        overflow: unset;
+        @include for-laptop {
+          @apply justify-end;
+          width: 45%;
+        }
       }
     }
   }
-    #tags {
-      display: none;
-      color: white;
-    }
-    .headline {
-      @apply mb-12;
-      @include for-laptop {
-      }
-    }
-    canvas {
-      @apply relative;
-      width: 113%;
-    }
-    @media screen and (max-width: 942px) {
-        .column {
-          width: 100% !important;
-          flex: 100% !important;
-        }
-        .column:first-child {
-          margin: 1rem 1rem 0 1rem;
-        }
-    }
-    @media screen and (max-width: 768px) {
+  #tags {
+    @apply hidden text-white;
+  }
+  canvas {
+    @apply relative;
+    width: 113%;
+  }
+  @media screen and (max-width: 942px) {
       .column {
-        width: 96% !important;
+        width: 100% !important;
+        flex: 100% !important;
       }
       .column:first-child {
-        margin: 0.5rem;
+        margin: 1rem 1rem 0 1rem;
       }
-      canvas {
-        width: 96%;
-      }
+  }
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 96% !important;
     }
+    .column:first-child {
+      margin: 0.5rem;
+    }
+    canvas {
+      width: 96%;
+    }
+  }
 }

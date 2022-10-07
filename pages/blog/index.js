@@ -6,12 +6,21 @@ import Navbar from '../../components/Navbar';
 import { getAllPosts } from '../../lib/api';
 
 const Blog = ({ allPosts: { edges } }) => (
-    <div className="">
+    <div className="VaroBoy__Blog">
       <Head>
       <title>Jakub Varinsky | Blog</title>
       </Head> 
       <Navbar/>
-      <main className="">
+      <main>
+      <div className="VaroBoy__container">
+          <div className="VaroBoy__container-inner">
+              <div className="VaroBoy__headline">
+                  <h1>Blog</h1>
+                  <p>I like to blog about the stuff I'm interested in. Hopefully you'll find some of it interesting too.</p>
+              </div>
+            </div>
+        </div>
+
         <h1 className="">Latest blog articles</h1>
         <hr />
         <section>

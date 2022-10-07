@@ -1,0 +1,17 @@
+.VaroBoy__Blog {
+    .VaroBoy {
+        &__container {
+            &-inner {
+                @apply h-full;
+                background-color: #181818;
+                padding: 0 1.5rem 6rem 1.5rem;
+                
+                @include for-laptop {
+                  padding: 0 5rem 2rem;
+                  left: 25px;
+                  width: calc(100% - 50px);
+                }
+            }
+        }
+    } 
+}
