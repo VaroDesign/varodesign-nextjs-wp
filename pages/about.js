@@ -1,11 +1,8 @@
-import Link from 'next/link';
 import Head from 'next/head'
 import Navbar from '../components/Navbar';
 import Script from 'next/script'
 
-import Video from '../components/homepage/video';
-
-export default function Contact() {
+export default function About() {
   return (
     <div  className="VaroBoy__About">
       <Head>

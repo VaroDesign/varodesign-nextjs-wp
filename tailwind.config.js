@@ -10,7 +10,7 @@ module.exports = {
         'container' : '#121212',
         'mainColor' : '#93824e',
         'hover' : '#c6a841',
-        'greyText' : 'rgba(255,255,255,0.5)',
+        'greyText' : 'rgba(255,255,255,0.9)',
       },
     },
   },

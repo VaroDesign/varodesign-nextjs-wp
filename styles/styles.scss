@@ -14,21 +14,26 @@
 @import "web-development";
 @import "clients";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
-
 * {
     box-sizing: border-box;
   }
   
 body {
-    background-color: #181818;
+    background-color: #1e1e1e;
     margin: 0;
-    font-family: Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 main {
   @include for-laptop {
     margin-left: 50px;
   }
+}
+
+#nprogress .bar {
+  background: #93824e !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #93824e !important;
+  border-left-color: #93824e !important;
 }

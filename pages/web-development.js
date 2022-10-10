@@ -30,6 +30,6 @@ export default function WebDevelopment() {
           </div>
         </div>
       </main>
-      </div>
+    </div>
   )
 }

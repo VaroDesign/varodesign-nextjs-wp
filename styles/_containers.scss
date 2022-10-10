@@ -10,10 +10,10 @@
     @apply relative flex flex-wrap justify-center pt-10 pb-28 px-2;
     @include for-tablet {
         @apply px-4;
-
     }
     @include for-laptop {
-      @apply px-20 py-12;
+      @apply px-20 py-12 m-auto;
+      max-width: 1853px;
     }
 }
   &--content {

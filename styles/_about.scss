@@ -2,7 +2,7 @@
   .VaroBoy {
     &__container{
       &-inner {
-        @apply h-full bg-darkGrey;
+        @apply h-full;
         padding: 0 1.5rem 6rem 1.5rem;
         
         @include for-laptop {
@@ -33,12 +33,16 @@
       }
     }
   }
+  .quick-timeline .timeline-item {
+    @apply text-center;
+  }
+
   #tags {
     @apply hidden text-white;
   }
   canvas {
     @apply relative;
-    width: 113%;
+    width: 106%;
   }
   @media screen and (max-width: 942px) {
       .column {

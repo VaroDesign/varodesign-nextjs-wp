@@ -74,12 +74,11 @@
     }
   }
   &--footer {
-    color:$greyFont;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 200;
+    @apply text-center;
+    margin: 0 auto;
     p {
-        margin-bottom: 1px;
+      @apply text-sm;
+      margin-bottom: 1px;
     }
   }
 }
