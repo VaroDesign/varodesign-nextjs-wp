@@ -33,6 +33,10 @@
       }
     }
   }
+  .timeline-title h3{
+    @apply text-black font-bold;
+    text-shadow: none;
+  }
   .quick-timeline .timeline-item {
     @apply text-center;
   }

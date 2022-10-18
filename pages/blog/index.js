@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
-
 import Navbar from '../../components/Navbar';
 
 import { getAllPosts, getPhotographyPosts } from '../../lib/api';
@@ -27,7 +25,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/tech"><b>All Tech articles {`>`}</b></a></li>
+              <li><a href="/blog/tech"><b>All Tech articles <span>{`>`}</span></b></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -38,7 +36,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Web-Development articles {`>`}</b></a></li>
+              <li><a href="/blog/web-development"><b>All Web-Development articles <span>{`>`}</span></b></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -49,7 +47,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Hustle articles {`>`}</b></a></li>
+              <li><a href="/blog/web-development"><b>All Hustle articles <span>{`>`}</span></b></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -60,7 +58,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Other articles {`>`}</b></a></li>
+              <li><a href="/blog/web-development"><b>All Other articles <span>{`>`}</span></b></a></li>
             </ul>
           </div>
         </div>
