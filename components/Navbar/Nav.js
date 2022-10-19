@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NavItems } from './NavItems';
+import Contact from './contact';
 import React, { useEffect } from 'react';
 import { useRouter } from "next/router";
 
@@ -34,6 +35,7 @@ export default function Nav () {
                         </div>
                     )
                 })}
+                <Contact/>
             </div>
         </nav>
     )

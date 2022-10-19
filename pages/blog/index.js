@@ -42,14 +42,14 @@ const Blog = ({ allPosts, photoPosts }) => (
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
-            <h2>💸 Hustle</h2>
+            <h2>💸 Wealth</h2>
             <ul>
               {allPosts.map(({ node }) => (
                 <li key={node.id}>
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Hustle articles {`>`}</b></a></li>
+              <li><a href="/blog/web-development"><b>All Wealth articles {`>`}</b></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
