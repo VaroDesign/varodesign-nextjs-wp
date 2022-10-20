@@ -35,14 +35,5 @@ export const NavItems = [
         icon: "/icons/blog.svg",
         iconActive:"/icons/blog-active.svg",
         alt: 'blog-icon'
-    },
-    {
-        title: 'Contact',
-        textMobile: 'Contact',
-        url: '/contact',
-        cName: 'nav-links',
-        icon: "/icons/contact.svg",
-        iconActive:"/icons/contact-active.svg",
-        alt: 'contact-icon'
-    },
+    }
 ]
