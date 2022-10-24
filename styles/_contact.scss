@@ -1,3 +1,39 @@
-.contact {
-    
+.VaroBoy__contact {
+    margin: 0 2rem;
+    h2 {
+        @apply text-2xl;
+    }
+    &-container {
+        @apply flex flex-wrap flex-row justify-center;
+        
+        div {
+            @apply mb-8;
+        }
+    }
+    &-social {
+        ul {
+            @apply flex justify-between;
+        }
+        li svg {
+            @apply cursor-pointer;
+            fill: $main;
+            -webkit-filter: drop-shadow(4px 4px 3px rgb(0 0 0));
+            filter: drop-shadow(4px 4px 3px rgb(0 0 0));
+            transition: 0.4s;
+        }
+        &--facebook svg:hover {
+            fill: #365899;
+        }
+        &--instagram svg:hover {
+            fill: #be36ca;
+        }
+        &--linkedin svg:hover {
+            fill: #007bb5;
+        }
+    }
+}
+
+.VaroBoy__subscribe {
+    @apply flex flex-col;
+    margin: 0 2rem 3rem;
 }

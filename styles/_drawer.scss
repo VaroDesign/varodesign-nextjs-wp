@@ -1,0 +1,11 @@
+.VaroBoy__drawer {
+    @apply text-mainColor flex flex-wrap flex-row justify-center content-between;
+    background: #333333 !important;
+    width: 425px !important;
+    height: 89% !important;
+    left: unset !important;
+
+    @include for-laptop {
+        height: 100% !important;
+    }
+}
