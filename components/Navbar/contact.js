@@ -40,6 +40,7 @@ const Contact = () => {
                 <Swipe 
                     nodeName="div" 
                     onSwipedRight={onSwipeRightListener}
+                    detectTouch = {true}
                 >
                     <Drawer
                         open={isOpen}
