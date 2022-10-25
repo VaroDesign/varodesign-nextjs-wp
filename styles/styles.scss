@@ -39,3 +39,17 @@ main {
   border-top-color: #93824e !important;
   border-left-color: #93824e !important;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-black;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-mainColor;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-hover;
+}
