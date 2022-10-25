@@ -43,7 +43,7 @@ const Contact = () => {
                         onClose={toggleDrawer}
                         direction="right"
                         className={isOpen ? "VaroBoy__contact--drawer open" : "VaroBoy__contact--drawer"}
-                        style={{width: "330px", background: "#333333", bottom: "0"}}
+                        style={{width: "330px", height: "100%", background: "#333333", bottom: "0"}}
                     >
                         <div className="VaroBoy__headline">
                             <h2 className="VaroBoy__title">Contact</h2>
