@@ -16,6 +16,7 @@
     "caniuse-lite": "^1.0.30001407",
     "create-next-app": "^12.3.1",
     "jquery": "^3.6.1",
+    "mirsahib-react-swipe-component": "^3.0.4",
     "next": "^12.3.1",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.5",

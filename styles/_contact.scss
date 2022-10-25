@@ -3,6 +3,14 @@
     h2 {
         @apply text-2xl;
     }
+    &--drawer {
+        @apply flex flex-wrap flex-row justify-center content-between;
+        left: unset !important;
+    
+        @include for-laptop {
+            height: 100% !important;
+        }
+    }
     &-container {
         @apply flex flex-wrap flex-row justify-center;
         
