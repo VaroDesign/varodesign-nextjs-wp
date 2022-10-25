@@ -1,31 +1,26 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import FacebookIcon from "../../public/icons/facebook.svg"
 import InstagramIcon from "../../public/icons/instagram.svg"
 import LinkedinIcon from "../../public/icons/linkedin.svg"
-import $ from "jquery"
 
-import {Swipe, Position} from "mirsahib-react-swipe-component"
-
+import {Swipe} from "mirsahib-react-swipe-component"
 
 const Contact = () => {
     const [isOpen, setIsOpen] = React.useState(false)
     const toggleDrawer = () => {
-        setIsOpen((prevState) => !prevState)
+        setIsOpen((prevState) => !prevState);
+        if(document.querySelector(".VaroBoy__contact--drawer").classList.contains("open")){
+            document.body.style.overflowY = "visible";
+        } else {
+            document.body.style.overflowY = "hidden";
+        }
     }
 
     const onSwipeRightListener = () => {
-        document.querySelector(".EZDrawer__checkbox").checked = false;
+        toggleDrawer();
     }
-
-    useEffect(() => {
-        if($(".VaroBoy__contact--drawer").hasClass("open")) {
-            $("body").css("overflow-y", "hidden");
-        } else {
-            $("body").css("overflow-y", "visible");
-        }
-    })
 
     return (
         <>
@@ -39,6 +34,7 @@ const Contact = () => {
                 <span className="VaroBoy__tooltip">Contact</span>
                 <Swipe 
                     nodeName="div" 
+                    className="VaroBoy__contact-swipe"
                     onSwipedRight={onSwipeRightListener}
                     detectTouch = {true}
                 >
@@ -47,7 +43,7 @@ const Contact = () => {
                         onClose={toggleDrawer}
                         direction="right"
                         className={isOpen ? "VaroBoy__contact--drawer open" : "VaroBoy__contact--drawer"}
-                        style={{width: "330px", background: "#333333"}}
+                        style={{width: "330px", background: "#333333", bottom: "0"}}
                     >
                         <div className="VaroBoy__headline">
                             <h2 className="VaroBoy__title">Contact</h2>
@@ -76,10 +72,10 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="VaroBoy__subscribe">
-                                <h2>📰 Get Newsletter</h2>
-                                <input type="text" placeholder="First Name" />
-                                <input type="email" placeholder="email address" />
-                                <button>Subscribe</button>
+                            <h2>📰 Get Newsletter</h2>
+                            <input type="text" placeholder="First Name" />
+                            <input type="email" placeholder="email address" />
+                            <button>Subscribe</button>
                         </div>
                     </Drawer>
                 </Swipe>
