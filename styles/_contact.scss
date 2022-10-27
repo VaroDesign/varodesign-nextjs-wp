@@ -1,5 +1,4 @@
 .VaroBoy__contact {
-    margin: 0 2rem;
     h2 {
         @apply text-2xl;
     }
@@ -42,6 +41,58 @@
 }
 
 .VaroBoy__subscribe {
-    @apply flex flex-col;
-    margin: 0 2rem 3rem;
+    @apply flex flex-col mb-12;
+    min-width: 260px;
+    h2 {
+        @apply text-2xl mb-6;
+    }
+    &-field {
+        @apply relative mb-6;
+    }
+    label {
+        @apply absolute left-0 opacity-50;
+        color: #b1b1b1;
+        pointer-events: none;
+        transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all;
+
+        &.has-value {
+            @apply text-xs opacity-100;
+            top: -15px;
+        }
+    }
+    input {
+        @apply text-lg w-full bg-transparent;
+        -webkit-filter: drop-shadow(4px 4px 3px rgb(0 0 0));
+        filter: drop-shadow(4px 4px 3px rgb(0 0 0));
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        box-shadow: 0 0;
+        border-bottom: 1px solid $main;
+    }
+    input:focus {
+        @apply opacity-80 border-hover;
+        outline: none;
+    }
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    box-shadow: 0 0;
 }
