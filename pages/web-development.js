@@ -1,7 +1,8 @@
-import { WebPortfolio } from '../lib/web-development';
-import Navbar from '../components/Navbar';
-import Link from 'next/link';
-import Head from 'next/head';
+import { WebPortfolio } from '../lib/web-development'
+import Navbar from '../components/Navbar'
+import Link from 'next/link'
+import Head from 'next/head'
+import Image from 'next/image'
 
 export default function WebDevelopment() {
   return (
@@ -18,7 +19,7 @@ export default function WebDevelopment() {
                   <Link className="VaroBoy__container-link" href="/kok">
                     <div key={item.title} className="VaroBoy__container-inner">
                       <div className="VaroBoy__client-logo"> 
-                        <img src={item.imgUrl} alt={item.title} />    
+                        <Image width={100} height={100} layout="responsive" src={item.imgUrl} alt={item.title}/>    
                       </div>
                       <div className="VaroBoy__client-name">  
                         <h3>{item.title}</h3>

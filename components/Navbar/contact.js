@@ -93,7 +93,7 @@ const Contact = () => {
                                 <input type="email" />
                                 <label>Email</label>
                             </div>
-                            <button>Subscribe</button>
+                            <a className="VaroBoy__primary-btn">Subscribe</a>
                         </div>
                     </Drawer>
                 </Swipe>
