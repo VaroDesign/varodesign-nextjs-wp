@@ -24,5 +24,7 @@
     }
 }
 .VaroBoy__primary-btn {
+    @apply bg-mainColor m-auto;
+    min-width: 126px;
     padding: 0.5rem 1.75rem;
 }

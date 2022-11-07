@@ -78,10 +78,6 @@
         @apply opacity-80 border-hover;
         outline: none;
     }
-    .VaroBoy__primary-btn {
-        @apply absolute left-2/4 bottom-0 bg-mainColor;
-        transform:translate(-50%, 0);
-    }
 }
 
 textarea:focus,
