@@ -6,6 +6,7 @@ import InstagramIcon from "../../public/icons/instagram.svg"
 import LinkedinIcon from "../../public/icons/linkedin.svg"
 import $ from "jquery"
 import {Swipe} from "mirsahib-react-swipe-component"
+import PrimaryBtn from "../buttons/primary-btn"
 
 const Contact = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -93,7 +94,7 @@ const Contact = () => {
                                 <input type="email" />
                                 <label>Email</label>
                             </div>
-                            <a className="VaroBoy__primary-btn">Subscribe</a>
+                            <PrimaryBtn title="Subscribe"/>
                         </div>
                     </Drawer>
                 </Swipe>

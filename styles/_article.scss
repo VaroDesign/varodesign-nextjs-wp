@@ -1,0 +1,36 @@
+.VaroBoy__Article {
+    .VaroBoy {
+      &__container{
+        &-inner {
+          @apply h-full;
+          padding: 3rem 1.5rem 6rem 1.5rem;
+          
+          @include for-laptop {
+            padding: 3rem 5rem 2rem;
+            left: 25px;
+            width: calc(100% - 50px);
+          }
+        }
+        &--content {
+          @apply items-center;
+          @include for-laptop {
+            @apply pr-8;
+          }
+        }
+        &--content-inner:first-child {
+          @apply mb-6;
+          @include for-laptop {
+            @apply mb-0;
+            width: 55%;
+          }
+        }
+        &--content-inner:nth-child(2) {
+          overflow: unset;
+          @include for-laptop {
+            @apply justify-end;
+            width: 45%;
+          }
+        }
+      }
+    }
+}

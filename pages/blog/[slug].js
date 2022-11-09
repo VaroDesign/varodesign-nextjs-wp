@@ -30,25 +30,39 @@ export default function Post({ postData }) {
     };
 
     return (
-        <div className="">
-            <Navbar/>
+        <div className="VaroBoy__Article">
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <main className="{styles.main}">
+            <Navbar/>
+            <main>
                 {router.isFallback ? (
                     <h2>Loading...</h2>
                 ) : (
-                    <article className="{blogStyles.article}">
-                        <div className="{blogStyles.postmeta}">
-                            <h1 className="{styles.title}">{postData.title}</h1>
-                            <p>{formatDate(postData.date)}</p>
+                    <div className="VaroBoy__container">
+                        <div className="VaroBoy__container-inner">
+                            <div className="VaroBoy__container--content">
+                                <div className="VaroBoy__container--content-outer">
+                                    <div className="VaroBoy__container--content-inner">
+                                        <article className="{blogStyles.article}">
+                                            <div className="{blogStyles.postmeta}">
+                                                <h1 className="{styles.title}">{postData.title}</h1>
+                                                <p>{formatDate(postData.date)}</p>
+                                            </div>
+                                            <div 
+                                                className='post-content content'
+                                                dangerouslySetInnerHTML={{ __html: postData.content }}
+                                            />
+                                        </article>
+                                    </div>
+                                    <div className="VaroBoy__container--content-inner">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div 
-                            className='post-content content'
-                            dangerouslySetInnerHTML={{ __html: postData.content }}
-                            />
-                    </article>
+                    </div>
+
                 )}
                 <p>
                     <Link href="/blog">
