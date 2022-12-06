@@ -54,13 +54,13 @@
         @apply absolute left-0 opacity-50;
         color: #b1b1b1;
         pointer-events: none;
-        transition: 0.3s ease all;
-        -moz-transition: 0.3s ease all;
-        -webkit-transition: 0.3s ease all;
+        transition: 0.2s all;
+        -moz-transition: 0.2s all;
+        -webkit-transition: 0.2s all;
 
         &.has-value {
-            @apply text-xs opacity-100;
             top: -15px;
+            @apply text-xs opacity-100;
         }
     }
     input {
@@ -73,6 +73,7 @@
         border-radius: 0;
         box-shadow: 0 0;
         border-bottom: 1px solid $main;
+        transition: 0.2s ease;
     }
     input:focus {
         @apply opacity-80 border-hover;
