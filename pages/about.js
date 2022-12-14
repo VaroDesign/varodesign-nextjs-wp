@@ -39,9 +39,9 @@ export default function About() {
                         <ul>
                             <li><a href="http://www.google.com" target="_blank">jQuery</a></li>
                             <li><a href="/fish">JavaScript</a></li>
-                            <li><a href="/chips">NextJS</a></li>
+                            <li><a href="/chips"><img  width={100} height={100} src="https://res.cloudinary.com/dwa1jtluu/image/upload/v1653464815/kenjimmy.me/html_sx3o4c.png" alt="html"/></a></li>
                             <li><a href="/salt">ReactJS</a></li>
-                            <li><a href="/vinegar">NunJucks</a></li>
+                            <li><a href="/vinegar"><img width={100} height={100} src="https://res.cloudinary.com/dwa1jtluu/image/upload/v1653464815/kenjimmy.me/javascript_wpr45g.png" alt="javascript"/></a></li>
                             <li><a href="/vinegar">SASS</a></li>
                             <li><a href="/vinegar">HTML</a></li>
                             <li><a href="/vinegar">Git</a></li>

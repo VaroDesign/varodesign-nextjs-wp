@@ -1,7 +1,7 @@
 setTimeout(function() {
     try {
       TagCanvas.Start('VaroBoy__Tags','tags',{
-        textColour: '#fff',
+        textColour: '#ffffff',
         outlineColour: 'rgba(0,0,0,0)',
         depth: 0.8,
         zoomMax: 1.1,
