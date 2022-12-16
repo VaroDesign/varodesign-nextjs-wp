@@ -2,11 +2,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { useEffect } from "react";
-
-// data
 import { getAllPostsWithSlug, getPost } from '../../lib/api';
-
-// styles
 import Navbar from '../../components/Navbar';
 
 export default function Post({ postData }) {
@@ -40,35 +36,30 @@ export default function Post({ postData }) {
                     <h2>Loading...</h2>
                 ) : (
                     <div className="VaroBoy__container">
-                        <div className="VaroBoy__container-inner">
-                            <div className="VaroBoy__container--content">
-                                <div className="VaroBoy__container--content-outer">
-                                    <div className="VaroBoy__container--content-inner">
-                                        <article className="{blogStyles.article}">
-                                            <div className="{blogStyles.postmeta}">
-                                                <h1 className="{styles.title}">{postData.title}</h1>
-                                                <p>{formatDate(postData.date)}</p>
-                                            </div>
-                                            <div 
-                                                className='post-content content'
-                                                dangerouslySetInnerHTML={{ __html: postData.content }}
-                                            />
-                                        </article>
-                                    </div>
-                                    <div className="VaroBoy__container--content-inner">
+                        <div className="VaroBoy__side-bar">
+                            <img src="/img/mocks/google-ad-mockup.png" alt="" />
+                        </div>
+                        <div className="VaroBoy__content">
+                            <Link href="/blog">
+                                <a className="VaroBoy__btn-back"><span>{`<`} </span>Back to articles</a>
+                            </Link>
+                            <article className="VaroBoy__content-container">
+                                <h1>{postData.title}</h1>
+                                <p className="VaroBoy__date">
+                                    {formatDate(postData.date)}
+                                </p>
+                                <div
+                                    dangerouslySetInnerHTML={{ __html: postData.content }}
+                                />
+                            </article>
+                        </div>
+                        <div className="VaroBoy__side-bar">
+                            <div className="VaroBoy__side-bar-container">
 
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                 )}
-                <p>
-                    <Link href="/blog">
-                        <a>back to articles</a>
-                    </Link>
-                </p>
             </main>
         </div>
     )

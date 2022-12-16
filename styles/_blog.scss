@@ -7,12 +7,6 @@
         @apply mx-4 mb-12 sm:w-full md:w-5/12 bg-container rounded-2xl p-7; 
         box-shadow: inset 0 -0.125em 0.5em 0 rgb(0 0 0 / 85%), 0 3px 2px -2px rgb(255 255 255 / 8%);
 
-        a h3:hover, li:last-child a {
-            @apply text-mainColor;
-        }
-        a:hover span {
-            @apply ml-1;
-        }
         li {
             @apply py-3;
             border-bottom: dotted rgba(255,255,255,0.5) 2px;

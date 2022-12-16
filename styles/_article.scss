@@ -1,36 +1,54 @@
 .VaroBoy__Article {
-    .VaroBoy {
-      &__container{
-        &-inner {
-          @apply h-full;
-          padding: 3rem 1.5rem 6rem 1.5rem;
-          
-          @include for-laptop {
-            padding: 3rem 5rem 2rem;
-            left: 25px;
-            width: calc(100% - 50px);
-          }
-        }
-        &--content {
-          @apply items-center;
-          @include for-laptop {
-            @apply pr-8;
-          }
-        }
-        &--content-inner:first-child {
-          @apply mb-6;
-          @include for-laptop {
-            @apply mb-0;
-            width: 55%;
-          }
-        }
-        &--content-inner:nth-child(2) {
-          overflow: unset;
-          @include for-laptop {
-            @apply justify-end;
-            width: 45%;
-          }
+  .VaroBoy {
+    &__container {
+      @include for-laptop {
+        margin: 0 auto;
+        min-width: 1024px;
+        max-width: 1400px;
+      }
+    }
+    &__side-bar {
+      @apply hidden;
+      @include for-laptop {
+        @apply block pt-9 relative;
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      &-container {
+        @apply bg-container rounded-2xl;
+        padding: 2rem 1.5rem;
+        box-shadow: inset 0 -0.125em 0.5em 0 #000;
+        @include for-laptop {
+          @apply fixed;
+          padding: 1rem 1.5rem 2rem;
         }
       }
     }
+    &__content {
+      @apply mt-4 mb-24;
+      @include for-laptop {
+        @apply mt-12;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      &-container {
+        @apply bg-container rounded-2xl;
+        padding: 2rem 1.5rem;
+        box-shadow: inset 0 -0.125em 0.5em 0 #000;
+        @include for-laptop {
+          padding: 1rem 1.5rem 2rem;
+        }
+      }
+    }
+    &__side-bar, &__content {
+      @apply px-3;
+
+      @include for-laptop {
+        @apply my-12;
+      }
+    }
+  }
+  h1 {
+    @apply mb-4;
+  }
 }

@@ -9,18 +9,23 @@
 }
 
 h1, .VaroBoy__title {
-    @apply text-mainColor;
+    @apply text-mainColor text-4xl;
     font-family: "Inter-Bold";
-    font-size: 2.7rem;
     margin-bottom: 0;
+    @include for-tablet {
+        font-size: 2.7rem;
+    }
 }
 h2, .VaroBoy__sub-title {
     @apply text-3xl text-mainColor;
     font-family: "Inter-Bold";
 }
 h3, p {
-    @apply text-xl text-greyText;
+    @apply text-base text-greyText;
     font-family: "Inter-regular";
+    @include for-tablet {
+        @apply text-xl;
+    }
 }
 h1, h2, h3, p {
     text-shadow: 4px 4px 10px rgb(0,0,0);
@@ -29,5 +34,8 @@ h1, h2, h3, p {
 .VaroBoy {
     &__headline {
         @apply my-12 text-center;
+    }
+    &__date {
+        @apply text-sm pb-4 text-grey;
     }
 }

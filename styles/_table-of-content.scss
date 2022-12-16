@@ -1,0 +1,8 @@
+.VaroBoy__table-of-content {
+    a {
+        @apply text-white;
+    }
+    li.active > a {
+        @apply text-mainColor;
+      }
+}

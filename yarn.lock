@@ -2182,6 +2182,11 @@
   dependencies:
     "lru-cache" "^6.0.0"
 
+"html-formatter@^0.1.9":
+  "integrity" "sha512-ao56oQHElDyKjnRara+Tw9iT6Ieuu6MRiBvCOCn2yhKtdT2Z9ViAyBal2j83bAf8sc6qAzGU0gkNVlFzkVAFHQ=="
+  "resolved" "https://registry.npmjs.org/html-formatter/-/html-formatter-0.1.9.tgz"
+  "version" "0.1.9"
+
 "http-signature@~1.2.0":
   "integrity" "sha512-CAbnr6Rz4CYQkLYUtSNXxQPUH2gK8f3iWexVlsnMeD+GjlsQ0Xsy1cOX+mN3dtxYomRy21CiOzU8Uhw6OwncEQ=="
   "resolved" "https://registry.npmjs.org/http-signature/-/http-signature-1.2.0.tgz"
@@ -3022,6 +3027,13 @@
   dependencies:
     "deepmerge" "^1.3.2"
     "react" "^16.3.1"
+
+"react-table-of-contents@^0.1.0":
+  "integrity" "sha512-+/WQ9JgFf9on4ce2i8YbVbYY6ezNYUzdG/jNrJvT/VO8hu1YC6TUkL7rKHqV5Vs5glZ8CPjEDF6LiRstn9lphw=="
+  "resolved" "https://registry.npmjs.org/react-table-of-contents/-/react-table-of-contents-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "html-formatter" "^0.1.9"
 
 "react-transition-group@^4.4.1":
   "integrity" "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g=="

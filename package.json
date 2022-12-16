@@ -26,6 +26,7 @@
     "react-modern-drawer": "^1.1.2",
     "react-photo-feed": "^1.0.13",
     "react-popupbox": "^2.0.8",
+    "react-table-of-contents": "^0.1.0",
     "react-transition-group": "^4.4.1",
     "sass": "^1.54.9"
   },

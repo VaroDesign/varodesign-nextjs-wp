@@ -25,7 +25,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/tech"><b>All Tech articles <span>{`>`}</span></b></a></li>
+              <li><a href="/blog/tech" className="VaroBoy__btn-next">All Tech articles <span>{`>`}</span></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -36,7 +36,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Web-Development articles <span>{`>`}</span></b></a></li>
+              <li><a href="/blog/web-development" className="VaroBoy__btn-next">All Web-Development articles <span>{`>`}</span></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -47,7 +47,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Wealth articles {`>`}</b></a></li>
+              <li><a href="/blog/web-development" className="VaroBoy__btn-next">All Wealth articles <span>{`>`}</span></a></li>
             </ul>
           </div>
           <div className="VaroBoy__Blog-categories-box">
@@ -58,7 +58,7 @@ const Blog = ({ allPosts, photoPosts }) => (
                   <a href={`/blog/${node.slug}`}><h3>{node.title}</h3></a>
                 </li>
               ))}
-              <li><a href="/blog/web-development"><b>All Other articles <span>{`>`}</span></b></a></li>
+              <li><a href="/blog/web-development" className="VaroBoy__btn-next">All Other articles <span>{`>`}</span></a></li>
             </ul>
           </div>
         </div>

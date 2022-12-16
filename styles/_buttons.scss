@@ -1,3 +1,25 @@
+.VaroBoy__btn {
+    &-back, &-next {
+        @apply block text-mainColor font-bold pb-3;
+        &:hover {
+            @apply text-hover;
+        }
+        &:hover span {
+          @apply relative;
+        }
+    }
+    &-back {
+        &:hover span {
+            right: 3px;
+        }
+    }
+    &-next {
+        &:hover span {
+            left: 3px;
+        }
+    }
+}
+
 .VaroBoy__close-btn {
     @apply absolute;
     top: 15px;
