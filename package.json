@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-mac": "npm run && next dev 8080 -o",
+    "dev-mac": "npm run && next dev & open http://localhost:3000",
     "dev": "npm run open-browser && next dev -p 8080",
     "open-browser": "start http://localhost:8080",
     "build": "next build",
